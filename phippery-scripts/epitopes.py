@@ -19,7 +19,7 @@ EPITOPES = {
         "right border": 573
     },
     "FP" : {
-        "limits": [800, 833], 
+        "limits": [805, 835], 
         "binding threshold": 100,
         "left border": 810,
         "right border": 829
