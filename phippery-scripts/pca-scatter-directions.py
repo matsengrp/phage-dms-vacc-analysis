@@ -217,7 +217,8 @@ for row, peptide in p_table.iterrows():
             color=c, width=0.002, alpha=a, edgecolor="black"
         )
 
-p_table.to_csv("pca_p_table.csv")
+p_table.to_csv("./pca_p_table.csv")
+
 for i, lo in enumerate(["E", "F", "G"]):
     for epitope, metadata in EPITOPES.items():
         if epitope in ["CTD-1", "CTD-2", "CTD-3"]: continue

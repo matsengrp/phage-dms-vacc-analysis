@@ -3,13 +3,10 @@ EPITOPES = {
     "NTD" : {
         "limits": [285, 305], 
         "binding threshold": 40,
-        #"left border": 289-288,
-        #"right border": 306-288
         "left border": 289,
         "right border": 306
     },
     "CTD" : {
-        #"limits": [545, 690], 
         "limits": [540, 690], 
         "binding threshold": 200,
         "left border": 550,
@@ -22,7 +19,6 @@ EPITOPES = {
         "right border": 573
     },
     "FP" : {
-        #"limits": [805, 835], 
         "limits": [800, 833], 
         "binding threshold": 100,
         "left border": 810,
