@@ -43,12 +43,6 @@ sample_table = ds.sample_table.to_pandas().infer_objects()
 # "average quality:"
 sample_table["coverage:"] = sample_table["reads mapped:"] / len(ds.peptide_id)
 align_stats = [c for c in sample_table.columns if c.endswith(":")]
-#print(align_stats)
-#import sys
-#sys.exit()
-
-
-#plotting
 
 # generally, we want to facet the subplots by alignment stat
 # and then one of a few helpful ways to split sample groups
