@@ -9,7 +9,8 @@ EPITOPES = {
         "right border": 306
     },
     "CTD" : {
-        "limits": [545, 690], 
+        #"limits": [545, 690], 
+        "limits": [540, 690], 
         "binding threshold": 200,
         "left border": 550,
         "right border": 685
@@ -21,7 +22,8 @@ EPITOPES = {
         "right border": 573
     },
     "FP" : {
-        "limits": [805, 835], 
+        #"limits": [805, 835], 
+        "limits": [800, 833], 
         "binding threshold": 100,
         "left border": 810,
         "right border": 829

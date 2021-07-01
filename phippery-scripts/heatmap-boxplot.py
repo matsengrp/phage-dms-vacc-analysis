@@ -7,7 +7,8 @@ import numpy as np
 import pandas as pd
 
 import matplotlib.pyplot as plt
-import matplotlib
+from matplotlib import cm
+#import matplotlib
 import matplotlib.patches as patches
 import seaborn as sns
 from statannot import add_stat_annotation
@@ -23,7 +24,7 @@ warnings.filterwarnings("ignore")
 
 metric = "counts_enrichment"
 highlight="sample_group"
-batch = "SPIKE1"
+batch = "SPIKE2"
 np.random.seed(24)
 mode_agg="wt_only"
 ag="sum"
@@ -38,7 +39,7 @@ ds = phippery.load(sys.argv[1])
 batch_samples = id_coordinate_subset(ds, where="library_batch", is_equal_to=batch)
 ds = ds.loc[dict(sample_id=batch_samples)]
 
-hcmap = getattr(matplotlib.cm, heatcolormap)
+hcmap = getattr(cm, heatcolormap)
 
 sample_group_order = [
         'Vaccinated - (No prior infection) Cohort 1', 
@@ -89,9 +90,7 @@ cohort_119 = set.intersection(
     )
 
 sams = set(ds.sample_id.values)
-#sams = sams - set.union(cohort_119, cohort_250)
 sams = sams - cohort_119
-#sams = sams - set.unioncohort_250)
 ds = ds.loc[dict(sample_id=list(sams))]
 
 ############################################
@@ -100,8 +99,6 @@ ds = ds.loc[dict(sample_id=list(sams))]
 
 # Grab enrichments
 enrichments = ds[f"{metric}"]
-
-#sys.exit()
 
 # Grab sample table
 s_table = ds.sample_table.to_pandas()
@@ -148,17 +145,10 @@ kw = dict(ha="center", va="center", fontsize=16, color="black")
 for ax, sublabel in zip(["A", "F", "B"], ["A", "B", "C"]):
     axd[ax].text(-0.10, 1.10, f"{sublabel})", transform=axd[ax].transAxes, **kw)
 
-
-#identify_axes(axd)
-
 ############################################
 ################ BOXPLOTS ##################
 ############################################
 
-#s_table = copy.deepcopy(s_table)
-#p_table = copy.deepcopy(p_table)
-
-#for epitope, limits in epitope_limits.items():
 for epitope, metadata in EPITOPES.items():
     if epitope in ["CTD-1", "CTD-2", "CTD-3"]: continue
     limits = metadata["limits"]
@@ -203,7 +193,7 @@ for ax, epitope in zip(["B", "C", "D", "E"], epitope_order):
             comparisons_correction=None,
             text_format='star', 
             loc='inside', 
-            verbose=2
+            verbose=0
     )
     limits = EPITOPES[epitope]["limits"]
     ylabel = "Summed enrichment"
@@ -419,15 +409,15 @@ for i, lo in enumerate(["F", "I", "J"]):
 
 axd["F"].get_xaxis().set_visible(False)
 axd["F"].yaxis.set_label_position("right")
-axd["F"].set_ylabel("Comp 1\nLoadings")
+axd["F"].set_ylabel("Comp 1")
 
 axd["I"].get_xaxis().set_visible(False)
 axd["I"].yaxis.set_label_position("right")
-axd["I"].set_ylabel("Comp 2\nLoadings")
+axd["I"].set_ylabel("Comp 2\nPrincipal axes/directions\nin feature space")
 
 axd["J"].set_xlabel("Amino Acid Position")
 axd["J"].yaxis.set_label_position("right")
-axd["J"].set_ylabel("Comp 3\nLoadings")
+axd["J"].set_ylabel("Comp 3")
 axd["J"].yaxis.label.set_fontsize(10)
 
 axd["C"].set_ylabel("")
