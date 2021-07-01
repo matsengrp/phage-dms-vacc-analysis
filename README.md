@@ -39,8 +39,10 @@ Control of the COVID-19 pandemic will rely on SARS-CoV-2 vaccine-elicited antibo
 
 ## Phippery Downstream Analysis Scripts and Dependencies
 
-The downstream analysis described in the manuscript relies on an open-source python 
-package, [Phippery](). 
+The downstream analysis described in the manuscript relies on an in-house open-source python 
+package, [Phippery](), as well as some other popular python packages. 
+These version-specific dependencies are all contained in the container images 
+listed in the `pipeline-scripts/phipflow.config` 
 
 ### Principal Component Analysis
 
@@ -48,10 +50,15 @@ package, [Phippery]().
 
 ### Authentic Wild Type Binding 
 
+
 ## Can I run this on my own data?
 
-short answer, yes, totally, but the configuration, downstream analysis, and plotting
-code are all taylored to the `pipeline-scripts/sample_table.csv`. So ... here's basically my best description. Again, feel free to reach out with any questions
+short answer, yes, but the configuration, downstream analysis, and plotting
+code are all taylored to the `pipeline-scripts/sample_table.csv`. 
+
+The steps involved in using this for your own data would involve creating your own sample metadata. We're in the process of creating interactive apps for many of the analysis and vidsualizations here. 
+
+So ... here's basically my best description. Again, feel free to reach out with any questions
 
 ## 
 
