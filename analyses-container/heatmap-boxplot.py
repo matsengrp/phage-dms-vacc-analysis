@@ -1,17 +1,15 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import cm
+import matplotlib.patches as patches
+import seaborn as sns
+from statannot import add_stat_annotation
+#####
 
 import phippery
 from phippery.utils import *
 from epitopes import EPITOPES
-
-import numpy as np
-import pandas as pd
-
-import matplotlib.pyplot as plt
-from matplotlib import cm
-#import matplotlib
-import matplotlib.patches as patches
-import seaborn as sns
-from statannot import add_stat_annotation
 
 import sys
 import warnings

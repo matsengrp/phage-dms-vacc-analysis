@@ -1,9 +1,10 @@
-
-from plotnine import *
 import matplotlib.pyplot as plt
-from phippery.utils import *
 import seaborn as sns
 import xarray as xr
+###
+
+from phippery.utils import *
+
 import pickle
 import sys
 

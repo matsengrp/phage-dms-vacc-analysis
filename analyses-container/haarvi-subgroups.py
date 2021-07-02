@@ -1,3 +1,13 @@
+import xarray as xr
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib
+from matplotlib.colors import to_hex
+import matplotlib.patches as patches
+from matplotlib import cm
+import seaborn as sns
+from statannot import add_stat_annotation
 
 import sys
 import copy
@@ -7,17 +17,6 @@ warnings.filterwarnings("ignore")
 import phippery
 from phippery.utils import *
 
-import xarray as xr
-import numpy as np
-import pandas as pd
-
-import matplotlib.pyplot as plt
-import matplotlib
-from matplotlib.colors import to_hex
-import matplotlib.patches as patches
-from matplotlib import cm
-import seaborn as sns
-from statannot import add_stat_annotation
 
 
 ######
