@@ -23,7 +23,7 @@ from phippery.utils import *
 #import time
 #import warnings
 #from adjustText import adjust_text
-#import sys
+import sys
 #warnings.filterwarnings("ignore")
 
 ds = phippery.load(sys.argv[1])
@@ -56,7 +56,7 @@ for batch, batch_ds in iter_sample_groups(ds, "library_batch"):
     #    new_table_name="neg_binom_mlxp"
     #)
 
-    
+    """    
     differential_selection_wt_mut(
             emp_ds, 
             data_table="counts_enrichment", 
@@ -65,7 +65,7 @@ for batch, batch_ds in iter_sample_groups(ds, "library_batch"):
             smoothing_flank_size=1,
             new_table_name="smooth_flank_1_enr_diff_sel"
     )
-    
+    """
 
 
     bat_ds.append(emp_ds)

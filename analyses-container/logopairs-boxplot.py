@@ -1,4 +1,13 @@
 
+import numpy as np
+import xarray as xr
+
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+import seaborn as sns
+from statannot import add_stat_annotation
+import logomaker
+
 from collections import defaultdict
 import os
 import sys
@@ -9,14 +18,6 @@ from phippery import *
 from epitopes import EPITOPES
 from epitopes import PEPTIDE_FLANK
 
-import numpy as np
-import xarray as xr
-
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
-import seaborn as sns
-from statannot import add_stat_annotation
-import logomaker
 
 
 batch = "SPIKE2"
