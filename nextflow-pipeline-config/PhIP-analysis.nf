@@ -194,6 +194,29 @@ process collect_phip_data {
         """ 
 }
 
-phip_data_ch.subscribe{println $it}
 // RUN ALL ANALYSIS
+process analysis {
+    
+    publishDir "${params.phip_data_dir}/", mode: 'copy'
+    label 'single_thread_large_mem'
+    container = 'quay.io/matsengrp/jvacc-ms-analysis' 
 
+    input:
+        file all_counts_files from counts_ch.collect()
+        file all_alignment_stats from alignment_stats_ch.collect()
+        file sample_table from Channel.fromPath("${params.sample_table}")
+        file peptide_table from Channel.fromPath("${params.peptide_table}")
+
+    output:
+        file "${params.dataset_prefix}.phip" into phip_data_ch
+
+    script:
+        """
+        phippery collect-phip-data \
+        -s_meta ${sample_table} \
+        -p_meta ${peptide_table} \
+        -c '*.counts' \
+        -s '*.stats' \
+        -o ${params.dataset_prefix}.phip
+        """ 
+}
