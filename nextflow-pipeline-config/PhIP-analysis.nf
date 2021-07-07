@@ -195,14 +195,37 @@ process collect_phip_data {
 }
 
 // RUN ALL ANALYSIS
-process analysis {
+process compute_enrichment_stats {
+    
+    publishDir "${params.phip_data_dir}/", mode: 'copy'
+    label 'single_thread_large_mem'
+    container = 'quay.io/matsengrp/phippery:latest' 
+
+    input:
+        file phip_ds from phip_data_ch
+        //file alignment-stats from Channel.fromPath("../analysis-image/alignment-stats.py")
+        file analysis from Channel.fromPath("../analysis-image/layer-stats.py")
+        
+
+    output:
+        file "layered-analysis.phip" into layered_phip_data_ch
+
+    """
+    set -eu
+    python ${analysis} ${phip_ds} layered-analysis.phip
+    """ 
+    //python compute_all_analysis_all_samples.py ${phip_ds} alignment-stats.pdf
+}
+
+// RUN ALL ANALYSIS
+process analysis_plotting {
     
     publishDir "${params.phip_data_dir}/", mode: 'copy'
     label 'single_thread_large_mem'
     container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
 
     input:
-        file phip_ds from phip_data_ch
+        file layered_phip_ds from layered_phip_data_ch
 
     //output:
     //    file "${params.dataset_prefix}.phip" into phip_data_ch
@@ -210,12 +233,10 @@ process analysis {
     script:
         """
         set -eu
-        python alignment_stats.py ${phip_ds} layered-analysis.phip
-        python compute_all_analysis_all_samples.py ${phip_ds} alignment-stats.pdf
-        python pca-scatter-directions.py layered-analysis.phip pca.pdf
-        python heatmap_boxplot.py layered-analysis.phip heatmap-boxplot.pdf
-        python logopairs-boxplot.py layered-analysis.phip logopairs-boxplot.pdf
-        python haarvi-subgroups.py layered-analysis.phip haarvi.pdf
-        python nih-subgroup.py layered-analysis.phip nih.pdf
+        python pca-scatter-directions.py ${layered_phip_ds} pca.pdf
+        python heatmap_boxplot.py ${layered_phip_ds} heatmap-boxplot.pdf
+        python logopairs-boxplot.py ${layered_phip_ds} logopairs-boxplot.pdf
+        python haarvi-subgroups.py ${layered_phip_ds} haarvi.pdf
+        python nih-subgroup.py ${layered_phip_ds} nih.pdf
         """ 
 }
