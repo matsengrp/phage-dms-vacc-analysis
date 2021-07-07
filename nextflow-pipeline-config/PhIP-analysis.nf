@@ -227,6 +227,7 @@ process analysis_plotting {
 
     input:
         file layered_phip_ds from layered_phip_data_ch
+        file epitopes from Channel.fromPath("../analysis-scripts/epitopes.py")
         file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
         file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
         file logo from Channel.fromPath("../analysis-scripts/logopairs-boxplot.py")
@@ -236,10 +237,10 @@ process analysis_plotting {
     script:
         """
         set -eu
-        python pca ${layered_phip_ds} pca.pdf
-        python heatmap ${layered_phip_ds} heatmap-boxplot.pdf
-        python logo ${layered_phip_ds} logopairs-boxplot.pdf
-        python haarvi ${layered_phip_ds} haarvi.pdf
-        python nih ${layered_phip_ds} nih.pdf
+        python ${pca} ${layered_phip_ds} pca.pdf
+        python ${heatmap} ${layered_phip_ds} heatmap-boxplot.pdf
+        python ${logo} ${layered_phip_ds} logopairs-boxplot.pdf
+        python ${haarvi} ${layered_phip_ds} haarvi.pdf
+        python ${nih} ${layered_phip_ds} nih.pdf
         """ 
 }

@@ -15,6 +15,7 @@ import sys
 import warnings
 warnings.filterwarnings("ignore")
 
+print(EPITOPES)
 
 ######
 #KNOBS
