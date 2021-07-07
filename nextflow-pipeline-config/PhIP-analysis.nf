@@ -199,24 +199,23 @@ process analysis {
     
     publishDir "${params.phip_data_dir}/", mode: 'copy'
     label 'single_thread_large_mem'
-    container = 'quay.io/matsengrp/jvacc-ms-analysis' 
+    container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
 
     input:
-        file all_counts_files from counts_ch.collect()
-        file all_alignment_stats from alignment_stats_ch.collect()
-        file sample_table from Channel.fromPath("${params.sample_table}")
-        file peptide_table from Channel.fromPath("${params.peptide_table}")
+        file phip_ds from phip_data_ch
 
-    output:
-        file "${params.dataset_prefix}.phip" into phip_data_ch
+    //output:
+    //    file "${params.dataset_prefix}.phip" into phip_data_ch
 
     script:
         """
-        phippery collect-phip-data \
-        -s_meta ${sample_table} \
-        -p_meta ${peptide_table} \
-        -c '*.counts' \
-        -s '*.stats' \
-        -o ${params.dataset_prefix}.phip
+        set -eu
+        python alignment_stats.py ${phip_ds} layered-analysis.phip
+        python compute_all_analysis_all_samples.py ${phip_ds} alignment-stats.pdf
+        python pca-scatter-directions.py layered-analysis.phip pca.pdf
+        python heatmap_boxplot.py layered-analysis.phip heatmap-boxplot.pdf
+        python logopairs-boxplot.py layered-analysis.phip logopairs-boxplot.pdf
+        python haarvi-subgroups.py layered-analysis.phip haarvi.pdf
+        python nih-subgroup.py layered-analysis.phip nih.pdf
         """ 
 }
