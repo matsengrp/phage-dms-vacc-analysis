@@ -8,8 +8,8 @@ module load Singularity
 export PATH=$SINGULARITYROOT/bin/:$PATH
 
 /usr/bin/time nextflow  \
-    -C phipflow.config.n0 \
-    run PhIP-Flow.nf \
+    -C phipflow.config.bt2 \
+    run PhIP-analysis.nf \
     -with-report output_local/nextflow_report.html \
-    -work-dir temp/ 
+    -work-dir temp/ \
     -resume

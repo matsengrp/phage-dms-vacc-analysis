@@ -87,11 +87,6 @@ index_sample_ch = pep_channel_index
 process short_read_alignment {
 
     label 'multithread'
-    //container:
-    //    if ("$params.alignment_tool" == "bowtie")
-    //        'quay.io/jgallowa/bowtie1.3:latest' 
-    //    else if ("$params.alignment_tool" == "bowtie2")
-    //        'quay.io/jgallowa/bowtie2:latest' 
     container = 'quay.io/jgallowa/bowtie2:latest' 
 
     input:
@@ -109,17 +104,11 @@ process short_read_alignment {
 
     shell:
 
-        //if ("$params.alignment_tool" == "bowtie")
         """
+        set -eu
         ${params.fastq_stream_func} ${respective_replicate_path} | \
-        bowtie ${params.align_args} --sam -x ${index}/peptide - > ${sample_id}.sam
+        bowtie2 ${params.align_args} -x ${index}/peptide - > ${sample_id}.sam
         """
-
-        //else if ("$params.alignment_tool" == "bowtie2")
-        //    """
-        //    ${params.fastq_stream_func} ${respective_replicate_path} | \
-        //    bowtie2 ${params.align_args} -x ${index}/peptide - > ${sample_id}.sam
-        //    """
 }
 
 
@@ -205,6 +194,6 @@ process collect_phip_data {
         """ 
 }
 
-
+phip_data_ch.subscribe{println $it}
 // RUN ALL ANALYSIS
 
