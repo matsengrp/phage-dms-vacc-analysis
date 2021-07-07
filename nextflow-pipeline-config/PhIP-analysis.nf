@@ -200,11 +200,12 @@ process compute_enrichment_stats {
     publishDir "${params.phip_data_dir}/", mode: 'copy'
     label 'single_thread_large_mem'
     container = 'quay.io/matsengrp/phippery:latest' 
+    //container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
 
     input:
         file phip_ds from phip_data_ch
         //file alignment-stats from Channel.fromPath("../analysis-image/alignment-stats.py")
-        file analysis from Channel.fromPath("../analysis-image/layer-stats.py")
+        file analysis from Channel.fromPath("../analysis-scripts/layer-stats.py")
         
 
     output:
@@ -226,17 +227,19 @@ process analysis_plotting {
 
     input:
         file layered_phip_ds from layered_phip_data_ch
-
-    //output:
-    //    file "${params.dataset_prefix}.phip" into phip_data_ch
+        file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
+        file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
+        file logo from Channel.fromPath("../analysis-scripts/logopairs-boxplot.py")
+        file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
+        file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
 
     script:
         """
         set -eu
-        python pca-scatter-directions.py ${layered_phip_ds} pca.pdf
-        python heatmap_boxplot.py ${layered_phip_ds} heatmap-boxplot.pdf
-        python logopairs-boxplot.py ${layered_phip_ds} logopairs-boxplot.pdf
-        python haarvi-subgroups.py ${layered_phip_ds} haarvi.pdf
-        python nih-subgroup.py ${layered_phip_ds} nih.pdf
+        python pca ${layered_phip_ds} pca.pdf
+        python heatmap ${layered_phip_ds} heatmap-boxplot.pdf
+        python logo ${layered_phip_ds} logopairs-boxplot.pdf
+        python haarvi ${layered_phip_ds} haarvi.pdf
+        python nih ${layered_phip_ds} nih.pdf
         """ 
 }
