@@ -322,4 +322,4 @@ for epitope, metadata in EPITOPES.items():
     axd[diff_sel_plot].set_ylabel(f"Summed\n differential selection")
     axd[diff_sel_plot].axhline(0, color="black", linestyle="--")
 
-    plt.savefig(f"{sys.argv[2]}-{group}-{epitope}")
+    plt.savefig(f"{sys.argv[2]}-{group}-{epitope}.pdf")
