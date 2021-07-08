@@ -223,6 +223,7 @@ for epitope, metadata in EPITOPES.items():
 
     # sum the enrichments for all samples in the epitope region
     s_table[f"{epitope}_raw_agg"] = epitope_enrichment.sum(axis=0).values
+    m = max(s_table[f"{epitope}_raw_agg"])
     
     # plot each paried set next to each other in columns
     for j, (visit, visit_st) in enumerate(s_table.groupby("visit_number")):
@@ -243,6 +244,7 @@ for epitope, metadata in EPITOPES.items():
         )
         axd[mosaic[i, j]].axhline(bt)
         axd[mosaic[i, j]].get_xaxis().set_visible(False)
+        axd[mosaic[i, j]].set_ylim([0,m])
         ylabel = f"{epitope} Epitope \n{limits[0]}-{limits[1]}"
         if j==0: 
             axd[mosaic[i, j]].set_ylabel(ylabel)

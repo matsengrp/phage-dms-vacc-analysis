@@ -73,7 +73,7 @@ else:
 
     cmap=plt.get_cmap("Set3")
     infect_vacc_colors = [cmap.colors[8], cmap.colors[9]]
-    figsize=[10, 8]
+    figsize=[10, 10]
     t1 = "Pre-vaccine draw" 
     t2 = "Post-vaccine draw 1"
     l1 = "Pre-vaccine draw" 
@@ -104,9 +104,10 @@ else:
         is_equal_to="Post-vaccine draw 1"
     ))
     group2 = set.intersection(vacc_prior, post)
+    group3 = set.intersection(hos, pre)
 
 
-    all_comparison_samples = set.union(group1, group2)
+    all_comparison_samples = set.union(group1, group2, group3)
     batch_samples = set(
             id_coordinate_subset(ds, where="library_batch", is_equal_to=f"{batch}")
     )
@@ -159,7 +160,7 @@ for epitope, metadata in EPITOPES.items():
         mosaic[i, 0:5] = int(i*2)
         mosaic[i, 5:11] = int(i*2+1)
     mosaic[num_pairs, :] = num_pairs*2
-    mosaic[num_pairs+1, :] = num_pairs*2
+    mosaic[num_pairs+1, :] = num_pairs*2+3
     mosaic[num_pairs+2, :] = num_pairs*2+1
     mosaic[num_pairs+3, :] = num_pairs*2+1
     mosaic[num_pairs+4, :] = num_pairs*2+1
@@ -168,9 +169,9 @@ for epitope, metadata in EPITOPES.items():
     chem_legend_ax = num_pairs*2
     group_legend_ax = num_pairs*2+3
 
-    mosaic[num_pairs+2, 9] = -1
-    mosaic[num_pairs+3, 9] = group_legend_ax
-    mosaic[num_pairs+4, 9] = group_legend_ax
+    #mosaic[num_pairs+2, 9] = -1
+    #mosaic[num_pairs+3, 9] = group_legend_ax
+    #mosaic[num_pairs+4, 9] = group_legend_ax
     mosaic = mosaic.astype(int)
 
     # set up the mosaic
@@ -178,15 +179,16 @@ for epitope, metadata in EPITOPES.items():
     axd = fig.subplot_mosaic(
         mosaic,
         gridspec_kw={
-            "wspace": 0.55,
+            "wspace": 1.2,
             "hspace": 0.25,
         },
         empty_sentinel=-1,
     )
 
+    labels = ["C", "D"] if group=="moderna" else ["A", "B"]
     kw = dict(ha="center", va="center", fontsize=19, color="black")
     for ax, sublabel in zip([mosaic[0, 0], diff_sel_plot], ["C", "D"]):
-        axd[ax].text(-0.10, 1.10, f"{sublabel})", transform=axd[ax].transAxes, **kw)
+        axd[ax].text(-0.16, 1.10, f"{sublabel})", transform=axd[ax].transAxes, **kw)
 
     axd[mosaic[0,0]].set_title(t1)
     axd[mosaic[0,5]].set_title(t2)
@@ -199,7 +201,6 @@ for epitope, metadata in EPITOPES.items():
     ds_paired = ds_cur.loc[dict(sample_id=paired_samples)]
 
     for i, (pid, pid_ds) in enumerate(iter_sample_groups(ds_paired, "participant_ID")):
-        #continue
 
         pid_tall = tidy_ds(pid_ds)
         p1 = pid_tall[pid_tall["visit_number"]==t1]
@@ -236,12 +237,12 @@ for epitope, metadata in EPITOPES.items():
         ax = axd[mosaic[i][0]]
         for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
                      ax.get_xticklabels() + ax.get_yticklabels()):
-            item.set_fontsize(10)
+            item.set_fontsize(9)
 
         ax = axd[mosaic[i][5]]
         for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
                      ax.get_xticklabels() + ax.get_yticklabels()):
-            item.set_fontsize(10)
+            item.set_fontsize(9)
 
     replicates_full = tidy_ds(ds_cur)
 
@@ -264,6 +265,7 @@ for epitope, metadata in EPITOPES.items():
             y = f"smooth_{flank}_enr_diff_sel", 
             hue="visit_number", 
             data=melted_sum_sample_loc,
+            linewidth=3,
             palette = infect_vacc_colors,
             ax = axd[diff_sel_plot],
             showfliers=False
@@ -291,13 +293,14 @@ for epitope, metadata in EPITOPES.items():
         ax = axd[sp]
         for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
                      ax.get_xticklabels() + ax.get_yticklabels()):
-            item.set_fontsize(12)
+            item.set_fontsize(14)
     
     axd[group_legend_ax].legend(
             handles=legend_elements,
-            loc="upper right",
+            loc="center",
             frameon=False,
-            bbox_to_anchor=(1.25, 1)
+            ncol=2,
+            prop={'size': 12}
     )
     axd[group_legend_ax].axis("off")
 
@@ -312,7 +315,7 @@ for epitope, metadata in EPITOPES.items():
         patches.Patch(
              facecolor=col,
              edgecolor="black",
-             label= chemistry[col]
+             label= chemistry[col],
         )
         for col in chemistry
     ]
@@ -320,12 +323,22 @@ for epitope, metadata in EPITOPES.items():
             handles=legend_elements,
             loc="center",
             frameon=False,
-            ncol=5
+            ncol=5,
+            prop={'size': 12},
+            bbox_to_anchor=[0.5,0.15]
     )
     axd[chem_legend_ax].axis("off")
 
-    axd[diff_sel_plot].set_title(f"{epitope}, {batch} replicates with wt binding above {bt}\n{num_pairs} paired samples")
+    #axd[diff_sel_plot].set_title(f"{epitope}, {batch} replicates with wt binding above {bt}\n{num_pairs} paired samples")
+
+
     axd[diff_sel_plot].set_ylabel(f"Summed\n differential selection")
     axd[diff_sel_plot].axhline(0, color="black", linestyle="--")
+    kw = dict(ha="center", va="center", fontsize=18, color="black", rotation=0)
+    title  = "Moderna Trial" if group=="moderna" else "HAARVI"
+    top = 0.98 if group=="moderna" else 0.96
+    fig.text(0.5, top, f"{title}\n {epitope} scaled differential selection", **kw)
+    top = 0.94 if group=="moderna" else 0.90
+    plt.subplots_adjust(top=top, left=0.15)
 
-    plt.savefig(f"{args.out}-{epitope}.pdf")
+    plt.savefig(f"{args.out}-{epitope}.png")

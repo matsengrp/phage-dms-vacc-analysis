@@ -14,7 +14,7 @@ EPITOPES = {
     },
     "CTD-1" : {
         "limits": [545, 580], 
-        "binding threshold": 30,
+        "binding threshold": 120,
         "left border": 550,
         "right border": 573
     },
