@@ -30,7 +30,7 @@ ds = phippery.load(sys.argv[1])
 
 # a few things to fix up in the sample table
 s1_s2 = id_coordinate_subset(ds, table="peptide_table", where="Protein", is_in=["S1","S2"])
-ds = ds.loc[dict(sample_id=list(sams), peptide_id=s1_s2)]
+ds = ds.loc[dict(peptide_id=s1_s2)]
 
 pep_df = ds.peptide_table.to_pandas()
 e = max(pep_df[pep_df["Protein"]=="S1"]["Loc"])
