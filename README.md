@@ -22,11 +22,11 @@ including phippery and phip-flow described in the Methods section.
 The source code, Nextflow script, software dependencies, and instructions for re-running the analysis 
 The materials for analysis are primarily broken down into three categories:
 
-    1. `image-template/` The configuration scripts defining a container image, which is used to build 
+1. `image-template/` The configuration scripts defining a container image, which is used to build 
         [![vacc-ms-analysis](https://quay.io/repository/matsengrp/vacc-ms-analysis/status "Docker Repository on Quay")](https://quay.io/repository/matsengrp/vacc-ms-analysis)
         a container with all version-specific [phippery](https://github.com/matsengrp/phippery) source code along with other non-local python package dependencies.
 
-    2. `analysis scripts/` the python scripts which perform analysis given a set of parameters followed by generation of all parameter-specific plots as those seen in the manuscript.  
+2. `analysis scripts/` the python scripts which perform analysis given a set of parameters followed by generation of all parameter-specific plots as those seen in the manuscript.  
 
 
 
