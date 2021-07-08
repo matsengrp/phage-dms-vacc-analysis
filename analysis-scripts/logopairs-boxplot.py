@@ -74,6 +74,10 @@ else:
     l2 = "Post-vaccine draw 1"
 
     # Group 1
+    hos = set(id_coordinate_subset(
+        ds, where="sample_group", 
+        is_equal_to="Hospitalized Serum"
+    ))
     non_hos = set(id_coordinate_subset(
         ds, where="sample_group", 
         is_equal_to="Non-Hospitalized Serum"
