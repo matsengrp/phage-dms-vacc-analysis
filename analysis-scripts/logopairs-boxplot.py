@@ -9,6 +9,7 @@ from statannot import add_stat_annotation
 import logomaker
 
 from collections import defaultdict
+import argparse
 import os
 import sys
 
@@ -18,14 +19,19 @@ from phippery import *
 from epitopes import EPITOPES
 from epitopes import PEPTIDE_FLANK
 
+parser = argparse.ArgumentParser(description='')
+parser.add_argument('-subgroup', type=str)
+parser.add_argument('-dataset', type=str)
+parser.add_argument('-out', type=str)
+args = parser.parse_args()
 
 
 batch = "SPIKE2"
 flank = "flank_1"
-group="moderna"
+group=args.subgroup
 #group="haarvi"
 
-ds = phippery.load(sys.argv[1])
+ds = phippery.load(args.dataset)
 
 # set up the sample groups and some plotting vars
 if group == "moderna":
@@ -322,4 +328,4 @@ for epitope, metadata in EPITOPES.items():
     axd[diff_sel_plot].set_ylabel(f"Summed\n differential selection")
     axd[diff_sel_plot].axhline(0, color="black", linestyle="--")
 
-    plt.savefig(f"{sys.argv[2]}-{group}-{epitope}.pdf")
+    plt.savefig(f"{args.out}-{epitope}.pdf")
