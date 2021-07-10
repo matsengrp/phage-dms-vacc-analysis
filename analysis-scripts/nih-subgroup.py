@@ -20,15 +20,22 @@ from statannot import add_stat_annotation
 #KNOBS
 ######
 
-batch="SPIKE2"
-metric = "counts_enrichment"
+parser = argparse.ArgumentParser(description='')
+parser.add_argument('-enrichment_metric', type=str, default="counts_enrichment")
+parser.add_argument('-dataset', type=str)
+parser.add_argument('-out', type=str)
+parser.add_argument('-batch', type=str, default="SPIKE2")
+args = parser.parse_args()
+
+batch=args.batch
+metric = enrichment_metric
 show_all_p = False
 highlight="sample_group"
 ag="sum"
 colormap="Set3"
 epitope_colormap="Set3"
 
-ds = phippery.load(sys.argv[1])
+ds = phippery.load(args.dataset)
 batch_samples = id_coordinate_subset(ds, where="library_batch", is_equal_to=batch)
 ds = ds.loc[dict(sample_id=batch_samples)]
 
@@ -422,5 +429,5 @@ plt.tight_layout()
 #fig.savefig(f"../figures/heatmap-boxplot/{metric}-{batch}-36d.pdf")
 
 #fig.suptitle(f"{epitope} Epitope Region S{limits[0]} - S{limits[1]}")
-fig.savefig(sys.argv[2])
+fig.savefig(args.out)
 

@@ -20,9 +20,10 @@ parser = argparse.ArgumentParser(description='')
 parser.add_argument('-subgroup', type=str)
 parser.add_argument('-dataset', type=str)
 parser.add_argument('-out', type=str)
+parser.add_argument('-batch', type=str, default="SPIKE2")
 args = parser.parse_args()
 
-batch = "SPIKE2"
+batch = args.dataset
 outdir = f"../sandbox/wt-binding-dist"
 figure_size = [10, 5]
 group=args.subgroup

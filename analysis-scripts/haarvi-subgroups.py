@@ -13,28 +13,35 @@ import sys
 import copy
 import warnings
 warnings.filterwarnings("ignore")
+import argparse
 
 import phippery
 from phippery.utils import *
 
+
+parser = argparse.ArgumentParser(description='')
+parser.add_argument('-enrichment_metric', type=str, default="counts_enrichment")
+parser.add_argument('-dataset', type=str)
+parser.add_argument('-out', type=str)
+parser.add_argument('-batch', type=str, default="SPIKE2")
+args = parser.parse_args()
 
 
 ######
 #KNOBS
 ######
 
-batch="SPIKE2"
-
-metric = "counts_enrichment"
-highlight="sample_group"
+batch=args.batch
+metric = args.enrichment_metric
+#highlight="sample_group"
 np.random.seed(24)
-mode_agg="wt_only"
-meta=f"04-27-21/"
+#mode_agg="wt_only"
+#meta=f"04-27-21/"
 ag="sum"
 colormap="Set3"
 epitope_colormap="Set3"
 
-ds = phippery.load(sys.argv[1])
+ds = phippery.load(args.dataset)
 batch_samples = id_coordinate_subset(ds, where="library_batch", is_equal_to=batch)
 ds = ds.loc[dict(sample_id=batch_samples)]
 
@@ -315,7 +322,7 @@ for ax in ["A", "B", "C", "D", "E", "F"]:
     axd[ax].get_xaxis().set_visible(False)
 
 plt.tight_layout()
-fig.savefig(sys.argv[2])
+fig.savefig(args.out)
 
 
 

@@ -21,9 +21,16 @@ print(EPITOPES)
 #KNOBS
 ######
 
-metric = "counts_enrichment"
+parser = argparse.ArgumentParser(description='')
+parser.add_argument('-enrichment_metric', type=str, default="counts_enrichment")
+parser.add_argument('-dataset', type=str)
+parser.add_argument('-out', type=str)
+parser.add_argument('-batch', type=str, default="SPIKE2")
+args = parser.parse_args()
+
+metric = ars.enrichment_metric
 highlight="sample_group"
-batch = "SPIKE2"
+batch = args.batch
 np.random.seed(24)
 mode_agg="wt_only"
 ag="sum"
@@ -34,7 +41,7 @@ heatcolormap="RdPu"
 window_size=10
 pca_axes_p_table = "pca_p_table.csv"
 
-ds = phippery.load(sys.argv[1])
+ds = phippery.load(args.dataset)
 batch_samples = id_coordinate_subset(ds, where="library_batch", is_equal_to=batch)
 ds = ds.loc[dict(sample_id=batch_samples)]
 
@@ -429,4 +436,4 @@ for a in axd:
         item.set_fontsize(14)
 
 plt.tight_layout()
-fig.savefig(sys.argv[2])
+fig.savefig(args.out)

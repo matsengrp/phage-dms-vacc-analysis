@@ -23,13 +23,12 @@ parser = argparse.ArgumentParser(description='')
 parser.add_argument('-subgroup', type=str)
 parser.add_argument('-dataset', type=str)
 parser.add_argument('-out', type=str)
+parser.add_argument('-batch', type=str)
 args = parser.parse_args()
 
-
-batch = "SPIKE2"
+batch = args.batch
 flank = "flank_1"
 group=args.subgroup
-#group="haarvi"
 
 ds = phippery.load(args.dataset)
 
@@ -38,6 +37,7 @@ if group == "moderna":
 
     cmap=plt.get_cmap("Set3")
     infect_vacc_colors = [cmap.colors[4], cmap.colors[2]]
+    #figsize=[10, 16]
     figsize=[10, 16]
     t1 = "36 days post-vaccination"
     t2 = "119 days post-vaccination"
@@ -187,7 +187,7 @@ for epitope, metadata in EPITOPES.items():
 
     labels = ["C", "D"] if group=="moderna" else ["A", "B"]
     kw = dict(ha="center", va="center", fontsize=19, color="black")
-    for ax, sublabel in zip([mosaic[0, 0], diff_sel_plot], ["C", "D"]):
+    for ax, sublabel in zip([mosaic[0, 0], diff_sel_plot], labels):
         axd[ax].text(-0.16, 1.10, f"{sublabel})", transform=axd[ax].transAxes, **kw)
 
     axd[mosaic[0,0]].set_title(t1)

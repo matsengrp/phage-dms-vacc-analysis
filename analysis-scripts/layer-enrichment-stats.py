@@ -26,7 +26,12 @@ from phippery.utils import *
 import sys
 #warnings.filterwarnings("ignore")
 
-ds = phippery.load(sys.argv[1])
+parser = argparse.ArgumentParser(description='')
+parser.add_argument('-dataset', type=str)
+parser.add_argument('-out', type=str)
+args = parser.parse_args()
+
+ds = phippery.load(args.dataset)
 
 # a few things to fix up in the sample table
 s1_s2 = id_coordinate_subset(ds, table="peptide_table", where="Protein", is_in=["S1","S2"])
@@ -77,4 +82,4 @@ for batch, batch_ds in iter_sample_groups(ds, "library_batch"):
     bat_ds.append(emp_ds)
     
 merged = bat_ds[0].merge(bat_ds[1])
-phippery.dump(merged, f"{sys.argv[2]}")
+phippery.dump(merged, args.out)

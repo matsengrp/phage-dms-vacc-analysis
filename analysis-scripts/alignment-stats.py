@@ -7,6 +7,7 @@ from phippery.utils import *
 
 import pickle
 import sys
+import argparse
 
 # this is a messy way to access the data from my pickle dump binary
 # phippery includes some niceer wrapper functions for this stuff
@@ -15,7 +16,14 @@ import sys
 ###
 # load the pickled binary dataset
 ###
-ds = pickle.load(open(sys.argv[1], "rb"))
+
+parser = argparse.ArgumentParser(description='')
+parser.add_argument('-dataset', type=str)
+parser.add_argument('-out', type=str)
+parser.add_argument('-batch', type=str)
+args = parser.parse_args()
+
+ds = pickle.load(open(args.dataset, "rb"))
 not_beads = id_coordinate_subset(ds, where="control_status", is_not_equal_to="beads_only")
 ds = ds.loc[dict(sample_id=not_beads)]
 
@@ -71,6 +79,7 @@ for subplot_row, (facet, facet_df) in enumerate(sample_table.groupby(facet)):
         sns.histplot(
                 data=facet_df, 
                 x=align_stat, 
+                hue="library_batch",
                 log_scale=log_scale,
                 ax = ax_s
         )
@@ -83,4 +92,4 @@ for subplot_row, (facet, facet_df) in enumerate(sample_table.groupby(facet)):
         ax_s.set_xticklabels(ax_s.get_xticks(), rotation = 45)
 
 fig.subplots_adjust(hspace=0.5, wspace=0.7)
-fig.savefig(sys.argv[2])
+fig.savefig(args.out)

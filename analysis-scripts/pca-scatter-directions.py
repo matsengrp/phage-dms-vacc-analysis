@@ -22,15 +22,21 @@ import seaborn as sns
 ######
 #KNOBS
 ######
+parser = argparse.ArgumentParser(description='')
+parser.add_argument('-enrichment_metric', type=str, default="counts_enrichment")
+parser.add_argument('-dataset', type=str)
+parser.add_argument('-out', type=str)
+parser.add_argument('-batch', type=str, default="SPIKE2")
+args = parser.parse_args()
 
-metric = "counts_enrichment"
-batch = "SPIKE2"
+metric = args.enrichment_metric
+batch = arg.batch
 np.random.seed(24)
 epitope_colormap="Set3"
 sample_colormap="Set3"
 pcs=3
 
-ds = phippery.load(sys.argv[1])
+ds = phippery.load(args.dataset)
 batch_samples = id_coordinate_subset(ds, where="library_batch", is_equal_to=batch)
 ds = ds.loc[dict(sample_id=batch_samples)]
 
@@ -373,5 +379,5 @@ axd["B"].set_xlabel("PC 1")
 axd["B"].set_ylabel("PC 3")
 
 plt.tight_layout()
-fig.savefig(sys.argv[2])
+fig.savefig(args.out)
 
