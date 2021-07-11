@@ -34,9 +34,23 @@ The materials for analysis are primarily broken down into three categories:
 
 Docker and Nextflow. Maybe some computing power if starting from raw fastq.
 
-1. install docker and nextflow command line tools, I'm using the following versions
+1. For running locally (not reccomended) install Docker + Nextflow. Otherwise,
+we have a configuration script that would take very little editing to run on a [SLURM](https://slurm.schedmd.com/documentation.html managed cluser with access to Nextflow and Singularity modules)
 
-2. Obtain the raw fastq sequences and and put them in the nextflow-pipeline-config directory. 
+2. Clone this repository and obtain the raw fastq sequences -- being sure to put them in the nextflow-pipeline-config directory under in the subdirectory names `NGS/`. 
+
+3. Inside the `nextflow-pipeline-config/phipflow.config.bt2` script, you may setup configuration settings for your particular computing environment i.e. which partitions get used for running each of the jobs as well as the resources allocated. For more information about setting up the configuration for your machine, see the [Nextflow documentation](https://www.nextflow.io/docs/latest/config.html).
+
+4. Run the pipeline!
+
+```bash
+
+```
+
+
+
+### Output and analysis parameters
+
 
 
 ### Static containers
@@ -48,31 +62,3 @@ phippery:vacc-ms-analysis [![Docker Repository on Quay](https://quay.io/reposito
 quay.io/jgallowa/bowtie2:vacc-ms-analysis
 
 quay.io/matsengrp/samtools-1.3:vacc-ms-analysis
-
-## Figure PDF's
-
-## Sample, Peptide and Epitope Binding Region Metadata.
-
-## PhIP-Flow Sample Alignment Pipeline
-
-## Phippery Downstream Analysis Scripts and Dependencies
-
-The downstream analysis described in the manuscript relies on an in-house open-source python 
-package, [Phippery](), as well as some other popular python packages. 
-These version-specific dependencies are all contained in the container images 
-listed in the `pipeline-scripts/phipflow.config` 
-
-## Can I run this on my own data?
-
-short answer, yes, but the configuration, downstream analysis, and plotting
-code are all taylored to the `pipeline-scripts/sample_table.csv`. 
-At the time of publication, interactive visualization tools for many of the analysis
-seen here are currently being worked on at 
-
-The steps involved in using this for your own data would involve creating your own sample metadata. We're in the process of creating interactive apps for many of the analysis and vidsualizations here. 
-
-So ... here's basically my best description. Again, feel free to reach out with any questions
-
-## 
-
-

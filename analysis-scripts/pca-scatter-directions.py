@@ -2,6 +2,7 @@
 import sys
 import warnings
 warnings.filterwarnings("ignore")
+import argparse
 
 import phippery
 from phippery.utils import *
@@ -30,7 +31,7 @@ parser.add_argument('-batch', type=str, default="SPIKE2")
 args = parser.parse_args()
 
 metric = args.enrichment_metric
-batch = arg.batch
+batch = args.batch
 np.random.seed(24)
 epitope_colormap="Set3"
 sample_colormap="Set3"

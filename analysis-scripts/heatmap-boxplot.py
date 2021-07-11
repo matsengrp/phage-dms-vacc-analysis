@@ -14,6 +14,7 @@ from epitopes import EPITOPES
 import sys
 import warnings
 warnings.filterwarnings("ignore")
+import argparse
 
 print(EPITOPES)
 
