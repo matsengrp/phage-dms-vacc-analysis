@@ -29,7 +29,7 @@ parser.add_argument('-batch', type=str, default="SPIKE2")
 args = parser.parse_args()
 
 batch=args.batch
-metric = enrichment_metric
+metric = args.enrichment_metric
 show_all_p = False
 highlight="sample_group"
 ag="sum"

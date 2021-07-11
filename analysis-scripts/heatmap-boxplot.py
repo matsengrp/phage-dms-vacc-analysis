@@ -29,7 +29,7 @@ parser.add_argument('-out', type=str)
 parser.add_argument('-batch', type=str, default="SPIKE2")
 args = parser.parse_args()
 
-metric = ars.enrichment_metric
+metric = args.enrichment_metric
 highlight="sample_group"
 batch = args.batch
 np.random.seed(24)
