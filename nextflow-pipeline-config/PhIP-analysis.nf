@@ -29,7 +29,7 @@ process generate_fasta_reference {
 process generate_index {
  
     //publishDir "${params.phip_data_dir}/reference"
-    container = 'quay.io/jgallowa/bowtie2:latest' 
+    container = 'quay.io/jgallowa/bowtie2:vacc-ms-analysis' 
     label 'multithread'
 
     input:
@@ -87,7 +87,7 @@ index_sample_ch = pep_channel_index
 process short_read_alignment {
 
     label 'multithread'
-    container = 'quay.io/jgallowa/bowtie2:latest' 
+    container = 'quay.io/jgallowa/bowtie2:vacc-ms-analysis' 
 
     input:
         set( 
@@ -120,7 +120,8 @@ aligned_reads_sam.into{aligned_reads_for_counts; aligned_reads_for_stats}
 process sam_to_stats {
 
     label 'multithread'
-    container = 'quay.io/biocontainers/samtools:1.3--h0592bc0_3'
+    //container = 'quay.io/biocontainers/samtools:1.3--h0592bc0_3'
+    container = 'quay.io/matsengrp/samtools-1.3:vacc-ms-analysis'
 
     input:
         set(
@@ -143,7 +144,7 @@ process sam_to_stats {
 process sam_to_counts {
     
     label 'multithread'
-    container = 'quay.io/biocontainers/samtools:1.3--h0592bc0_3'
+    container = 'quay.io/matsengrp/samtools-1.3:vacc-ms-analysis'
 
     input:
         set(
@@ -199,23 +200,24 @@ process compute_enrichment_stats {
     
     publishDir "${params.phip_data_dir}/", mode: 'copy'
     label 'single_thread_large_mem'
-    container = 'quay.io/matsengrp/phippery:latest' 
-    //container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
+    //container = 'quay.io/matsengrp/phippery:latest' 
+    container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
 
     input:
         file phip_ds from phip_data_ch
-        //file alignment-stats from Channel.fromPath("../analysis-image/alignment-stats.py")
-        file analysis from Channel.fromPath("../analysis-scripts/layer-stats.py")
+        file alignment_stats from Channel.fromPath("../analysis-scripts/alignment-stats.py")
+        file analysis from Channel.fromPath("../analysis-scripts/layer-enrichment-stats.py")
         
 
     output:
+        file "alignment-stats.pdf"
         file "layered-analysis.phip" into layered_phip_data_ch
 
     """
     set -eu
-    python ${analysis} ${phip_ds} layered-analysis.phip
+    python  ${alignment_stats} -dataset ${phip_ds} -out alignment-stats.pdf
+    python ${analysis} -dataset ${phip_ds} -out layered-analysis.phip
     """ 
-    //python compute_all_analysis_all_samples.py ${phip_ds} alignment-stats.pdf
 }
 
 // RUN ALL ANALYSIS
@@ -224,6 +226,7 @@ process analysis_plotting {
     publishDir "${params.phip_data_dir}/", mode: 'copy'
     label 'single_thread_large_mem'
     container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
+    
 
     input:
         file layered_phip_ds from layered_phip_data_ch
@@ -233,14 +236,23 @@ process analysis_plotting {
         file logo from Channel.fromPath("../analysis-scripts/logopairs-boxplot.py")
         file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
         file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
+        file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
+
+    output:
+        file "*.pdf"
+        //file "pca.pdf"
+        //file "heatmap-boxplot.pdf"
+        //file "logopairs-boxplot.pdf"
+        //file "haarvi.pdf"
+        //file "nih.pdf"
 
     script:
         """
         set -eu
-        python ${pca} ${layered_phip_ds} pca.pdf
-        python ${heatmap} ${layered_phip_ds} heatmap-boxplot.pdf
-        python ${logo} ${layered_phip_ds} logopairs-boxplot.pdf
-        python ${haarvi} ${layered_phip_ds} haarvi.pdf
-        python ${nih} ${layered_phip_ds} nih.pdf
+        python ${pca} -dataset ${layered_phip_ds} -batch SPIKE2 -out pca.pdf
+        python ${heatmap} -dataset ${layered_phip_ds} -batch SPIKE2 -out  heatmap-boxplot.pdf
+        python ${logo} -dataset ${layered_phip_ds} -batch SPIKE2 -out logopairs-boxplot.pdf
+        python ${haarvi} -dataset ${layered_phip_ds} -batch SPIKE2 -out haarvi.pdf
+        python ${nih} -dataset ${layered_phip_ds} -batch SPIKE2 -out nih.pdf
         """ 
 }
