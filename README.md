@@ -30,32 +30,41 @@ The materials for analysis are primarily broken down into three categories:
 
 
 
-### Quickstart
+### Quick start
 
 Docker and Nextflow. Maybe some computing power if starting from raw fastq.
 
-1. For running locally (not reccomended) install Docker + Nextflow. Otherwise,
+1. For running locally (not recommended) install Docker + Nextflow. Otherwise,
 we have a configuration script that would take very little editing to run on a [SLURM](https://slurm.schedmd.com/documentation.html managed cluser with access to Nextflow and Singularity modules)
 
 2. Clone this repository and obtain the raw fastq sequences -- being sure to put them in the nextflow-pipeline-config directory under in the subdirectory names `NGS/`. 
 
 3. Inside the `nextflow-pipeline-config/phipflow.config.bt2` script, you may setup configuration settings for your particular computing environment i.e. which partitions get used for running each of the jobs as well as the resources allocated. For more information about setting up the configuration for your machine, see the [Nextflow documentation](https://www.nextflow.io/docs/latest/config.html).
 
-4. Run the pipeline!
+4. Run the pipeline. An example of how we call the `nextflow run` command on our compute infrastructure the pipeline can be seen in the `nextflow-pipeline-config/run_analysis.sh`
 
 ```bash
+(base) quokka phage-dms-vacc-analysis/nextflow-pipeline-config ‹master*› » ./run_analysis.sh 
+N E X T F L O W  ~  version 20.07.1
+Launching `PhIP-analysis.nf` [golden_ekeblad] - revision: 02870c3fbe
+[01/807cac] process > generate_fasta_reference (1) [100%] 1 of 1, cached: 1 ✔
+[f3/915808] process > generate_index (1)           [100%] 1 of 1, cached: 1 ✔
+[95/1f1df0] process > short_read_alignment (633)   [100%] 633 of 633, cached: 633 ✔
+[25/3262fa] process > sam_to_stats (633)           [100%] 633 of 633, cached: 633 ✔
+[40/d53f0f] process > sam_to_counts (633)          [100%] 633 of 633, cached: 633 ✔
+[37/3ab3b4] process > collect_phip_data (1)        [100%] 1 of 1, cached: 1 ✔
+[22/efe9a0] process > compute_enrichment_stats (1) [100%] 1 of 1, cached: 1 ✔
+[2d/f9fe6f] process > analysis_plotting (1)        [100%] 1 of 1, cached: 1 ✔
 
+71.45user 5.57system 0:20.03elapsed 384%CPU (0avgtext+0avgdata 1743320maxresident)k
+8200inputs+39768outputs (4major+906688minor)pagefaults 0swaps
 ```
 
-
-
-### Output and analysis parameters
-
-
+Using the configuration called in the script above, the pipeline will output the pickle dump'd binary `layered-analysis.phip` which when loaded, will give you the xarray dataset which is described and queried by the [phippery](https://github.com/matsengrp/phippery)
 
 ### Static containers
 
-vacc-ms-analysis:vacc-ms-analysis [![vacc-ms-analysis](https://quay.io/repository/matsengrp/vacc-ms-analysis/status "Docker Repository on Quay")](https://quay.io/repository/matsengrp/vacc-ms-analysis) An extension of the phippery container with all backend function source code and dependencies listed in the `image-template/requirements.txt`
+vacc-ms-analysis:vacc-ms-analysis [![vacc-ms-analysis](https://quay.io/repository/matsengrp/vacc-ms-analysis/status "Docker Repository on Quay")](https://quay.io/repository/matsengrp/vacc-ms-analysis) An extension of the [phippery](https://github.com/matsengrp/phippery) container with all backend function source code and dependencies listed in the `image-template/requirements.txt`
 
 phippery:vacc-ms-analysis [![Docker Repository on Quay](https://quay.io/repository/matsengrp/phippery/status "Docker Repository on Quay")](https://quay.io/repository/matsengrp/phippery) phippery container
 
