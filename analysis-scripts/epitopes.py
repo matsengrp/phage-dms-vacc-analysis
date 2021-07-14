@@ -24,7 +24,7 @@ EPITOPES = {
         "left border": 810,
         "right border": 829
     },
-    "HR2" : {
+    "Linker-HR2" : {
         "limits": [1135,1170], 
         "binding threshold": 150,
         "left border": 1141,

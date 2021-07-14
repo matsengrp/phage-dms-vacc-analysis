@@ -162,7 +162,7 @@ epitope_order = [
     "NTD",
     "CTD",
     "FP", 
-    "HR2",
+    "Linker-HR2",
 ]
 
 subplot_keys = [
@@ -203,7 +203,7 @@ for subplot_ins, epitope in zip(subplot_keys, epitope_order):
     a.set_ylabel(ylabel)
     a.set_xlabel("")
 
-    if show_all_p or epitope in ["CTD", "HR2"]:
+    if show_all_p or epitope in ["CTD", "Linker-HR2"]:
         add_stat_annotation(
                 a, 
                 data=s_table_nih, 

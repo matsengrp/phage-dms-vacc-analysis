@@ -3,6 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import matplotlib.patches as patches
+import matplotlib.font_manager
+#plt.rcParams["font.family"] = "Helvetica"
+#from matplotlib import rc
+#rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+#rc('font',**{'family':'serif','serif':['Times']})
+#rc('text', usetex=True)
+matplotlib.pyplot.rcParams["font.family"] = "DejaVu Sans"
 import seaborn as sns
 from statannot import add_stat_annotation
 #####
@@ -15,8 +22,6 @@ import sys
 import warnings
 warnings.filterwarnings("ignore")
 import argparse
-
-print(EPITOPES)
 
 ######
 #KNOBS
@@ -176,7 +181,7 @@ epitope_order = [
     "NTD",
     "CTD",
     "FP", 
-    "HR2",
+    "Linker-HR2",
 ]
 
 first=True
@@ -420,7 +425,7 @@ axd["F"].set_ylabel("Comp 1")
 
 axd["I"].get_xaxis().set_visible(False)
 axd["I"].yaxis.set_label_position("right")
-axd["I"].set_ylabel("Comp 2\nPrincipal axes/directions\nin feature space")
+axd["I"].set_ylabel("Comp 2\nLoadings")
 
 axd["J"].set_xlabel("Amino Acid Position")
 axd["J"].yaxis.set_label_position("right")
