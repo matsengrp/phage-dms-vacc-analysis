@@ -356,6 +356,6 @@ for epitope, metadata in EPITOPES.items():
     plt.subplots_adjust(top=top, left=0.15)
     """
 
-    plt.savefig(f"{args.out}-{epitope}.png")
+    plt.savefig(f"{epitope}-{args.out}")
     print(epitope)
     #break

@@ -307,7 +307,7 @@ epitope_order = [
     "NTD",
     "CTD",
     "FP", 
-    "HR2",
+    "Linker-HR2",
 ]
 
 axd["I"].axis('off')

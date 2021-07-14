@@ -249,9 +249,12 @@ process analysis_plotting {
     script:
         """
         set -eu
+        python ${thresh} -dataset ${layered_phip_ds} -subgroup haarvi -out epitope_wt_thresholds.pdf
+        python ${thresh} -dataset ${layered_phip_ds} -subgroup moderna -out epitope_wt_thresholds.pdf
+        python ${logo} -dataset ${layered_phip_ds} -subgroup moderna -batch SPIKE2 -out logopairs.pdf
+        python ${logo} -dataset ${layered_phip_ds} -subgroup haarvi -batch SPIKE2 -out logopairs-haarvi.pdf
         python ${pca} -dataset ${layered_phip_ds} -batch SPIKE2 -out pca.pdf
         python ${heatmap} -dataset ${layered_phip_ds} -batch SPIKE2 -out  heatmap-boxplot.pdf
-        python ${logo} -dataset ${layered_phip_ds} -batch SPIKE2 -out logopairs-boxplot.pdf
         python ${haarvi} -dataset ${layered_phip_ds} -batch SPIKE2 -out haarvi.pdf
         python ${nih} -dataset ${layered_phip_ds} -batch SPIKE2 -out nih.pdf
         """ 

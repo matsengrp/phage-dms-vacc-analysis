@@ -23,13 +23,15 @@ parser.add_argument('-out', type=str)
 parser.add_argument('-batch', type=str, default="SPIKE2")
 args = parser.parse_args()
 
-batch = args.dataset
+batch = args.batch
 outdir = f"../sandbox/wt-binding-dist"
 figure_size = [10, 5]
 group=args.subgroup
 
 #if not os.path.exists(outdir): os.mkdir(outdir)
 ds = phippery.load(args.dataset)
+
+
 
 # set up the sample groups and some plotting vars
 if group == "moderna":
@@ -67,7 +69,7 @@ if group == "moderna":
     batch_comparison_samples = set.intersection(batch_samples, all_comparison_samples)
 
 #"haarvi"
-elif group=="haarvi-non-hos":
+elif group=="haarvi":
 
     cmap=plt.get_cmap("Set3")
     infect_vacc_colors = [cmap.colors[8], cmap.colors[9]]

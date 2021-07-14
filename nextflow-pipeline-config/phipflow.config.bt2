@@ -5,7 +5,7 @@ params{
 
     // ##### Dataset Name Prefix #####
     // Where you want all the files and intermediate file symlinks to go
-    phip_data_dir = './test-output/'
+    phip_data_dir = '../final-figure-pdfs/'
 
 
     // ##### Dataset Name Prefix #####
