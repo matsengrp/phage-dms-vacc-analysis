@@ -5,7 +5,7 @@
 This repository contains a complete set of materials, excluding raw data, 
 to replicate the analysis found in our manuscript.
 If interested in obtaining raw data,
-please feel free to contact [jared galloway]():
+please feel free to contact Jared Galloway:
 jgallowa (at) fredhutch (dot) org. 
 
 ## Abstract
@@ -35,7 +35,7 @@ The materials for analysis are primarily broken down into three categories:
 Docker and Nextflow. Maybe some computing power if starting from raw fastq.
 
 1. For running locally (not recommended) install Docker + Nextflow. Otherwise,
-we have a configuration script that would take very little editing to run on a [SLURM](https://slurm.schedmd.com/documentation.html managed cluser with access to Nextflow and Singularity modules)
+we have a configuration script that would take very little editing to run on a [SLURM](https://slurm.schedmd.com/documentation.html) managed cluster with access to Nextflow and Singularity modules
 
 2. Clone this repository and obtain the raw fastq sequences -- being sure to put them in the nextflow-pipeline-config directory under in the subdirectory names `NGS/`. 
 
@@ -60,7 +60,7 @@ Launching `PhIP-analysis.nf` [golden_ekeblad] - revision: 02870c3fbe
 8200inputs+39768outputs (4major+906688minor)pagefaults 0swaps
 ```
 
-Using the configuration called in the script above, the pipeline will output the pickle dump'd binary `layered-analysis.phip` which when loaded, will give you the xarray dataset which is described and queried by the [phippery](https://github.com/matsengrp/phippery)
+Using the configuration called in the script above, the pipeline will output the pickle dump'd binary `layered-analysis.phip` which when loaded, will give you the xarray dataset which is described and queried by the [phippery](https://github.com/matsengrp/phippery) package
 
 ### Static containers
 
