@@ -239,23 +239,23 @@ process analysis_plotting {
         file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
 
     output:
-        file "*.pdf"
-        //file "pca.pdf"
-        //file "heatmap-boxplot.pdf"
-        //file "logopairs-boxplot.pdf"
-        //file "haarvi.pdf"
-        //file "nih.pdf"
+        file "*.png"
+        //file "pca.png"
+        //file "heatmap-boxplot.png"
+        //file "logopairs-boxplot.png"
+        //file "haarvi.png"
+        //file "nih.png"
 
     script:
         """
         set -eu
-        python ${thresh} -dataset ${layered_phip_ds} -subgroup haarvi -out epitope_wt_thresholds.pdf
-        python ${thresh} -dataset ${layered_phip_ds} -subgroup moderna -out epitope_wt_thresholds.pdf
-        python ${logo} -dataset ${layered_phip_ds} -subgroup moderna -batch SPIKE2 -out logopairs.pdf
-        python ${logo} -dataset ${layered_phip_ds} -subgroup haarvi -batch SPIKE2 -out logopairs-haarvi.pdf
-        python ${pca} -dataset ${layered_phip_ds} -batch SPIKE2 -out pca.pdf
-        python ${heatmap} -dataset ${layered_phip_ds} -batch SPIKE2 -out  heatmap-boxplot.pdf
-        python ${haarvi} -dataset ${layered_phip_ds} -batch SPIKE2 -out haarvi.pdf
-        python ${nih} -dataset ${layered_phip_ds} -batch SPIKE2 -out nih.pdf
+        python ${thresh} -dataset ${layered_phip_ds} -subgroup haarvi -out epitope_wt_thresholds-haarvi.png
+        python ${thresh} -dataset ${layered_phip_ds} -subgroup moderna -out epitope_wt_thresholds-moderna.png
+        python ${logo} -dataset ${layered_phip_ds} -subgroup moderna -batch SPIKE2 -out logopairs.png
+        python ${logo} -dataset ${layered_phip_ds} -subgroup haarvi -batch SPIKE2 -out logopairs-haarvi.png
+        python ${pca} -dataset ${layered_phip_ds} -batch SPIKE2 -out pca.png
+        python ${heatmap} -dataset ${layered_phip_ds} -batch SPIKE2 -out  heatmap-boxplot.png
+        python ${haarvi} -dataset ${layered_phip_ds} -batch SPIKE2 -out haarvi.png
+        python ${nih} -dataset ${layered_phip_ds} -batch SPIKE2 -out nih.png
         """ 
 }
