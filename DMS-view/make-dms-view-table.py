@@ -62,7 +62,7 @@ for group_name, group_pars in sample_groups.items():
                 'mut_scaled_diff_sel': slim_tall["smooth_flank_1_enr_diff_sel"],
                 'mutation': slim_tall["aa_sub"],
                 'wildtype': wt,
-                'protein': pro,
+                'protein_chain': pro,
                 'condition': cond
             })
         )
