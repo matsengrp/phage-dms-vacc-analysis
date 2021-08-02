@@ -29,7 +29,7 @@ params{
     // ##### Sample Table #####
     // csv defining all sample metadata
     // See README for Details
-    sample_table = 'sample_table_patch.csv'
+    sample_table = 'sample_table.csv'
 
 
     // ##### Peptide Table #####
