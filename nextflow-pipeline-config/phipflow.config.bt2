@@ -46,10 +46,6 @@ params{
 }
 
 
-//docker {
-//    enabled = true
-//}
-
 // COMPUTATIONAL PLATFORM SETUP
 profiles{
     standard {
@@ -58,32 +54,26 @@ profiles{
 
             // DEFINE WHERE PROCESSES GET SUBMITTED 
             // AND HOW MANY RESOURCES THEY REQUEST
-            withLabel: 'single_thread_small_mem' {
+            withLabel: 'single_thread_small_mem' {      //CHANGEME
                 queue = 'campus-new'
                 cpus = 1
                 memory = 4.GB
                 time = '1h'
                 clusterOptions = '-A overbaugh_j'
             }            
-            withLabel: 'single_thread_large_mem' {
+            withLabel: 'single_thread_large_mem' {      //CHANGEME
                 queue = 'campus-new'
                 cpus = 1
                 memory = 32.GB
                 time = '1h'
                 clusterOptions = '-A overbaugh_j'
             }            
-            withLabel: 'multithread' {
+            withLabel: 'multithread' {                  //CHANGEME
                 queue = 'campus-new'
                 cpus = 4
                 memory = 30.GB
                 time = '4h'
                 clusterOptions = '-A overbaugh_j'
-            }
-            withLabel: 'io_mem' {
-                queue = 'largenode'
-                cpus = 6
-                memory = 128.GB
-                time = '12h'
             }
     }
 
@@ -91,7 +81,7 @@ profiles{
     singularity {
         enabled = true
         autoMounts = true
-        cacheDir = '/fh/scratch/delete30/matsen_e/jgallowa/temp/containers/'
+        cacheDir = '/fh/scratch/delete30/matsen_e/jgallowa/temp/containers/' //CHANGEME
         runOptions = '--contain -W /tmp/'
     }
     } // end local
