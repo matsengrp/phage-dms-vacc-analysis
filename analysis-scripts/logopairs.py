@@ -44,7 +44,7 @@ if group == "moderna":
     t2 = "119 days post-vaccination"
     l1 = "36 days post-vaccination"
     l2 = "119 days post-vaccination"
-    sublabel = "A"
+    sublabel = "B"
 
     st = ds.sample_table.to_pandas()
     st.loc[st[st["visit_number"]=="9"].index, "visit_number"] = t1
@@ -80,7 +80,7 @@ else:
     t2 = "Post-vaccine draw 1"
     l1 = "Pre-vaccine draw \n(post infection)" 
     l2 = "Post-vaccine draw"
-    sublabel = "B"
+    sublabel = "A"
 
     # Group 1
     hos = set(id_coordinate_subset(
@@ -193,7 +193,7 @@ for epitope, metadata in EPITOPES.items():
     kw = dict(ha="center", va="center", fontsize=19, color="black")
     sublabel = "B" if epitope == "CTD-1" else sublabel 
     sublabel = "A" if epitope == "NTD" else sublabel 
-    sublabel = "B" if group != "moderna" else sublabel
+    sublabel = "A" if group != "moderna" else sublabel
     a = mosaic[0,0]
     axd[a].text(-0.16, 1.10, f"{sublabel})", transform=axd[a].transAxes, **kw)
 
