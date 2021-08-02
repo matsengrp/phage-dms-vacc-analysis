@@ -27,17 +27,16 @@ If interested in obtaining raw data to perform the analysis yourself,
 please feel free to contact Jared Galloway:
 jgallowa (at) fredhutch (dot) org. 
 
-### What this is NOT
 
-This is not the suggested approach for *exploring* our data (see section below).
+### Exploring the data, interactively
+
+Running the pipeline here is **not** the suggested approach for exploring our data.
 While running the pipeline is quite simple with some configuration (see *Running the Pipeline*),
 it involves processing nearly 400 sequence alignments and running
 esoteric analysis with plotting code specific to our sample's 
 [metadata](nextflow-pipeline-config/sample_table.csv). 
 
-### Exploring the data, interactively
-
-If you're interested in simply exploring our the rich amount of data from this study,
+Instead, if you're interested in simply exploring our the rich amount of data from this study,
 we strongly suggest checking out the pre-processed and publicly explorable 
 [DMS-View data repository](https://github.com/matsengrp/vacc-dms-view-host-repo). 
 There, we have formatted and hosted the data for every sample in the study
@@ -51,6 +50,8 @@ For more on this, see the repository
 
 We provide a fully reproducible and automated workflow which ingests 
 raw sequencing data and performs all analyses presented in the paper. 
+The workflow extends our more generalized PhIP-Seq alignment pipeline, 
+[PhIP-flow](https://github.com/matsengrp/phip-flow)
 The materials for analysis are primarily broken down into three categories:
 
 1. `image-template/` The configuration scripts defining a container image, which is used to build 
@@ -58,7 +59,7 @@ The materials for analysis are primarily broken down into three categories:
         
 2. `analysis-scripts/` The python scripts for computing normalizations on the data, as well as plotting code to produce our final figures. 
 
-3. `nextflow-pipeline-config/` All the necessary configuration scripts to run the Nextflow pipeline either (a) locally on a computer with docker installed, or (b) a [SLURM](https://slurm.schedmd.com/documentation.html) managed cluster with singularity available. The workflow defines and runs the processing steps within publicly available and static Docker software containers (see *Static Containers*, below).
+3. `nextflow-pipeline-config/` The Nextflow pipeline script as well as all necessary configuration scripts to run the wokflow either (a) locally on a computer with docker installed, or (b) a [SLURM](https://slurm.schedmd.com/documentation.html) managed cluster with singularity available. 
 
 
 ### Running the Pipeline
@@ -79,7 +80,8 @@ we have a configuration script that would take very little editing to run the an
 
 3. Generate a config script specific to your compute infrastructure. Consult the [Nextflow documentation](https://www.nextflow.io/docs/latest/config.html) for instructions on fitting the parameters to your specific infrastructure. 
 We provide an example of such a configuration for our Fred Hutch SLURM managed cluster in 
-[this file](./nextflow-pipeline-config/phipflow.config.bt2). Whatever you configuration, the JSON file must include parameters specified in the `PARAMS{...}` block of our config script.
+[this file](./nextflow-pipeline-config/phipflow.config.bt2). 
+Whatever your configuration, the file *must* include parameters specified in the `PARAMS{...}` block of our config script.
 
 4. Run the pipeline. An example of how we call the `nextflow run` command on our compute infrastructure the pipeline can be seen in the `nextflow-pipeline-config/run_analysis.sh`
 
@@ -100,7 +102,7 @@ Launching `PhIP-analysis.nf` [golden_ekeblad] - revision: 02870c3fbe
 8200inputs+39768outputs (4major+906688minor)pagefaults 0swaps
 ```
 
-Using the configuration called in the script above, the pipeline will output the pickle dump'd binary `layered-analysis.phip` which when loaded, will give you the xarray dataset which is described and queried by the [phippery](https://github.com/matsengrp/phippery) package.
+The pipeline will put all batch-specific figures and the respective xarray datasets in the `phip_data_dir` as defined by the phip-flow configuration scripts. 
 
 ### Static containers
 
