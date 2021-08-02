@@ -64,7 +64,7 @@ sample_group_order = [
 
 sample_group_labels = [
         'Vaccinated\n(No prior infection) - Moderna Trial', 
-        'Vaccinated\n(No prior infection) - HAARVI Trial', 
+        'Vaccinated\n(No prior infection) - HAARVI', 
         'Vaccinated\n(Prior infection)', 
         'Hospitalized Serum', 
         'Non-Hospitalized Serum', 
@@ -282,7 +282,7 @@ for g, g_df in s_table.groupby(["manuscript_cohort"]):
     if g == "Cohort 1":
         label = "Moderna Trial"
     else:
-        label = "HAARVI Trial"
+        label = "HAARVI"
 
     rect_v = patches.Rectangle(
             (-10, base),

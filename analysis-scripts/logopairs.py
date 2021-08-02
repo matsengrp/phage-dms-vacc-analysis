@@ -78,8 +78,8 @@ else:
     figsize=[10, 10]
     t1 = "Pre-vaccine draw" 
     t2 = "Post-vaccine draw 1"
-    l1 = "Pre-vaccine draw" 
-    l2 = "Post-vaccine draw 1"
+    l1 = "Pre-vaccine draw \n(post infection)" 
+    l2 = "Post-vaccine draw"
     sublabel = "B"
 
     # Group 1
@@ -193,11 +193,12 @@ for epitope, metadata in EPITOPES.items():
     kw = dict(ha="center", va="center", fontsize=19, color="black")
     sublabel = "B" if epitope == "CTD-1" else sublabel 
     sublabel = "A" if epitope == "NTD" else sublabel 
+    sublabel = "B" if group != "moderna" else sublabel
     a = mosaic[0,0]
     axd[a].text(-0.16, 1.10, f"{sublabel})", transform=axd[a].transAxes, **kw)
 
-    axd[mosaic[0,0]].set_title(t1, size=18)
-    axd[mosaic[0,5]].set_title(t2, size=18)
+    axd[mosaic[0,0]].set_title(l1, size=18)
+    axd[mosaic[0,5]].set_title(l2, size=18)
 
     paired_samples = id_coordinate_subset(
             ds, 
@@ -239,15 +240,42 @@ for epitope, metadata in EPITOPES.items():
             for s in [0, 5]:
                 axd[mosaic[i][s]].get_xaxis().set_visible(False)
 
+        
         axd[mosaic[i][0]].set_ylabel(f"{pid}")
 
         ax = axd[mosaic[i][0]]
+
+        if group != "moderna":
+            dpi = set(p1["days_post_infection"])
+            assert len(dpi) == 1
+            dpi = list(dpi)[0]
+            tt1 = f'{dpi} Days post-infection'
+            ax.text(0.85, 0.35, f'{tt1}', horizontalalignment='center',
+                    verticalalignment='center', transform=ax.transAxes)
+
         for item in ([ax.xaxis.label, ax.yaxis.label] +
                      ax.get_xticklabels() + ax.get_yticklabels()):
             item.set_fontsize(12)
         ax.yaxis.label.set_fontsize(18)
 
+
         ax = axd[mosaic[i][5]]
+
+        if group != "moderna":
+            dpi = set(p2["days_post_infection"])
+            dpv = set(p2["days_post_vaccination"])
+
+            assert len(dpi) == 1
+            dpi = list(dpi)[0]
+            tt1 = f'{dpi} Days post-infection'
+
+            assert len(dpv) == 1
+            dpv = list(dpv)[0]
+            tt2 = f'{dpv} Days post-vaccination'
+
+            ax.text(0.85, 0.35, f'{tt1}\n{tt2}', horizontalalignment='center',
+                    verticalalignment='center', transform=ax.transAxes)
+
         for item in ([ax.xaxis.label, ax.yaxis.label] +
                      ax.get_xticklabels() + ax.get_yticklabels()):
             item.set_fontsize(12)
