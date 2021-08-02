@@ -16,27 +16,28 @@ jgallowa (at) fredhutch (dot) org.
 
 ### What this is NOT
 
-This is not the suggested approach for exploring our data.
+This is not the suggested approach for exploring our data
+While running the pipeline is quite simple with some configuration (see *Running te Pipeline*)
 It involves processing nearly 400 sequence alignments and running
 esoteric analysis with plotting code specific to our sample's 
-[metadata]()
+[metadata](nextflow-pipeline-config/sample_table.csv)
 
 ### "Forget the pipeline, I just want to explore your data"
 
 No problem, for *MUCH* easier access to an interactive experience, 
 we strongly suggest checking out the pre-processed and publicly explorable 
-[DMS-View repository](). 
-There, we have formatted and hosted the data for use with the
-[DMS-View Tool]()
-for 398 replicates across two library batches of
-phage display, for each participant in the cohorts described. 
+[DMS-View repository](https://github.com/matsengrp/vacc-dms-view-host-repo). 
+There, we have formatted and hosted the data for 398 replicates across two library batches of
+phage display, for each participant in the cohorts described, to be used with the amazing DMS-View
+tool put out by the 
+[Bloom Lab](https://research.fredhutch.org/bloom/en.html). 
 
 ## Manuscript Abstract
 
 Control of the COVID-19 pandemic will rely on SARS-CoV-2 vaccine-elicited antibodies to protect against emerging and future variants; a more complete description of the differential humoral responses from infection or vaccination is needed. Here we comprehensively profiled the linear epitopes and pathways of escape for Spike-specific antibodies from individuals either enrolled in a phase 1 clinical trial of the mRNA-1273 Moderna vaccine (n=49) or enrolled in a Seattle-based study of people with diverse SARS-CoV-2 infection and/or vaccination status (n=60). Four epitopes accounted for most of the variance between samples: N-terminal domain (NTD), C-terminal domain (CTD), fusion peptide (FP), and heptad repeat 2 (HR2) epitopes. Binding to the FP and HR2 epitopes alone was associated with mild infection, whereas those with severe infection or vaccination had antibodies that bound to all four epitopes. Epitope binding appeared to change over time after vaccination, but other covariates such as mRNA vaccine dose, vaccine type (Pfizer BNT162b2 or Moderna mRNA-1273), or participant age did not appear to affect antibody binding to these epitopes. Vaccination induced a strong, uniform escape profile in the NTD, CTD, and HR2 regions, whereas infection elicited a strong response in the FP region with an antibody escape profile that was maintained after vaccination. Overall, vaccination led to a greater number of epitopes targeted across Spike and induced a uniform escape profile across individuals in many cases. These findings have implications for the selection of SARS-CoV-2 escape mutations on a population level. 
 
 
-### Overview
+### Repository Overview
 
 We provide a fully reproducible automated workflow which ingests raw sequencing data and performs all analyses presented in the paper. 
 The workflow defines and runs the processing steps within publicly available and static Docker software containers, 
@@ -53,20 +54,21 @@ The materials for analysis are primarily broken down into three categories:
 
 
 
-### Quick start
+### Running the Pipeline
 
 *What do I need?* 
 
-[Docker]() and 
-[Nextflow](). 
+Working installation of 
+[Docker](https://docs.docker.com/get-docker/) and 
+[Nextflow](https://www.nextflow.io/docs/latest/getstarted.html). 
 Maybe some computing power if starting from raw fastq.
 
-*What do?* 
+*How do I run it?* 
 
 1. For running locally (not recommended) install Docker + Nextflow. Otherwise,
 we have a configuration script that would take very little editing to run on a [SLURM](https://slurm.schedmd.com/documentation.html) managed cluster with access to Nextflow and Singularity modules
 
-2. Clone this repository and obtain the raw fastq sequences -- being sure to put them in the nextflow-pipeline-config directory under in the subdirectory names `NGS/`. 
+2. Clone this repository and obtain the raw fastq sequences. The data will likely come in the form of a tarball archive which when un-zippped `NGS/`. 
 
 3. Inside the `nextflow-pipeline-config/phipflow.config.bt2` script, you may setup configuration settings for your particular computing environment i.e. which partitions get used for running each of the jobs as well as the resources allocated. For more information about setting up the configuration for your machine, see the [Nextflow documentation](https://www.nextflow.io/docs/latest/config.html).
 
