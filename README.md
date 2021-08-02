@@ -2,13 +2,36 @@
 
 ### What is this?
 
-This repository contains a complete set of materials, excluding raw data, 
-to replicate the analysis found in our manuscript.
+This repository is here to serve as a static archive for all analysis done in the manuscript. 
+It aims to provide transparency and reproducibility within the context of our study. 
+It contains a complete set of materials, excluding raw data, 
+to replicate the analysis (from fastq to figures) 
+found in our manuscript with a single execution of a Nextflow pipeline.
+For those interested in viewing the figures for the second set of phage-display library replicates -
+we provide both sets of figures in `final-figure-pdfs/` (`SPIKE2/` is what is presented in the manuscript).
+
 If interested in obtaining raw data,
 please feel free to contact Jared Galloway:
 jgallowa (at) fredhutch (dot) org. 
 
-## Abstract
+### What this is NOT
+
+This is not the suggested approach for exploring our data.
+It involves processing nearly 400 sequence alignments and running
+esoteric analysis with plotting code specific to our sample's 
+[metadata]()
+
+### "Forget the pipeline, I just want to explore your data"
+
+No problem, for *MUCH* easier access to an interactive experience, 
+we strongly suggest checking out the pre-processed and publicly explorable 
+[DMS-View repository](). 
+There, we have formatted and hosted the data for use with the
+[DMS-View Tool]()
+for 398 replicates across two library batches of
+phage display, for each participant in the cohorts described. 
+
+## Manuscript Abstract
 
 Control of the COVID-19 pandemic will rely on SARS-CoV-2 vaccine-elicited antibodies to protect against emerging and future variants; a more complete description of the differential humoral responses from infection or vaccination is needed. Here we comprehensively profiled the linear epitopes and pathways of escape for Spike-specific antibodies from individuals either enrolled in a phase 1 clinical trial of the mRNA-1273 Moderna vaccine (n=49) or enrolled in a Seattle-based study of people with diverse SARS-CoV-2 infection and/or vaccination status (n=60). Four epitopes accounted for most of the variance between samples: N-terminal domain (NTD), C-terminal domain (CTD), fusion peptide (FP), and heptad repeat 2 (HR2) epitopes. Binding to the FP and HR2 epitopes alone was associated with mild infection, whereas those with severe infection or vaccination had antibodies that bound to all four epitopes. Epitope binding appeared to change over time after vaccination, but other covariates such as mRNA vaccine dose, vaccine type (Pfizer BNT162b2 or Moderna mRNA-1273), or participant age did not appear to affect antibody binding to these epitopes. Vaccination induced a strong, uniform escape profile in the NTD, CTD, and HR2 regions, whereas infection elicited a strong response in the FP region with an antibody escape profile that was maintained after vaccination. Overall, vaccination led to a greater number of epitopes targeted across Spike and induced a uniform escape profile across individuals in many cases. These findings have implications for the selection of SARS-CoV-2 escape mutations on a population level. 
 
@@ -32,7 +55,13 @@ The materials for analysis are primarily broken down into three categories:
 
 ### Quick start
 
-Docker and Nextflow. Maybe some computing power if starting from raw fastq.
+*What do I need?* 
+
+[Docker]() and 
+[Nextflow](). 
+Maybe some computing power if starting from raw fastq.
+
+*What do?* 
 
 1. For running locally (not recommended) install Docker + Nextflow. Otherwise,
 we have a configuration script that would take very little editing to run on a [SLURM](https://slurm.schedmd.com/documentation.html) managed cluster with access to Nextflow and Singularity modules
@@ -64,7 +93,7 @@ Using the configuration called in the script above, the pipeline will output the
 
 ### Static containers
 
-vacc-ms-analysis:vacc-ms-analysis [![vacc-ms-analysis](https://quay.io/repository/matsengrp/vacc-ms-analysis/status "Docker Repository on Quay")](https://quay.io/repository/matsengrp/vacc-ms-analysis) An extension of the [phippery](https://github.com/matsengrp/phippery) container with all backend function source code and dependencies listed in the `image-template/requirements.txt`
+vacc-ms-analysis:vacc-ms-analysis [![vacc-ms-analysis](https://quay.io/repository/matsengrp/vacc-ms-analysis/status "Docker Repository on Quay")](https://quay.io/repository/matsengrp/vacc-ms-analysis) An extension of the [phippery](https://github.com/matsengrp/phippery) container with all back end function source code and dependencies listed in the `image-template/requirements.txt`
 
 phippery:vacc-ms-analysis [![Docker Repository on Quay](https://quay.io/repository/matsengrp/phippery/status "Docker Repository on Quay")](https://quay.io/repository/matsengrp/phippery) phippery container
 
