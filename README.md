@@ -32,9 +32,9 @@ jgallowa (at) fredhutch (dot) org.
 
 Running the pipeline here is **not** the suggested approach for exploring our data.
 While running the pipeline is quite simple with some configuration (see *Running the Pipeline*),
-it involves processing nearly 400 sequence alignments and running
-esoteric analysis with plotting code specific to our sample's 
-[metadata](nextflow-pipeline-config/sample_table.csv). 
+it involves processing over 600 sequence alignments and running downstream
+esoteric analysis/plotting code specific to our sample's 
+[metadata](nextflow-pipeline-config/sample_table.csv). Thus, tweaking parameters may be a headache.
 
 Instead, if you're interested in simply exploring our the rich amount of data from this study,
 we strongly suggest checking out the pre-processed and publicly explorable 
