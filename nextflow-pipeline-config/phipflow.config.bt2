@@ -5,13 +5,13 @@ params{
 
     // ##### Dataset Name Prefix #####
     // Where you want all the files and intermediate file symlinks to go
-    phip_data_dir = '../final-figure-pdfs/'
+    phip_data_dir = '../final-figure-pdfs/bowtie2/'
 
 
     // ##### Dataset Name Prefix #####
     // what you would like to name the .phip 
     // pickle dump'd xarray containing all info
-    dataset_prefix = '07-06-21-bowtie2'
+    dataset_prefix = '08-24-21-bowtie2'
 
 
     // ##### Alignment Tool #####

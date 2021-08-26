@@ -341,4 +341,4 @@ for epitope, metadata in EPITOPES.items():
     top = 0.94 if group=="moderna" else 0.90
     plt.subplots_adjust(top=top, left=0.15)
 
-    plt.savefig(f"{args.out}-{epitope}.png")
+    plt.savefig(f"{args.out}-{epitope}.pdf")

@@ -11,5 +11,5 @@ export PATH=$SINGULARITYROOT/bin/:$PATH
     -C phipflow.config.bt2 \
     run PhIP-analysis.nf \
     -with-report output_local/nextflow_report.html \
-    -work-dir temp/ \
+    -work-dir /fh/scratch/delete30/matsen_e/jgallowa/work/ \
     -resume

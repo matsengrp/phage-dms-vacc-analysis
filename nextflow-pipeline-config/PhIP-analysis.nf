@@ -220,42 +220,57 @@ process compute_enrichment_stats {
     """ 
 }
 
+//batches = Channel.from("SPIKE1", "SPIKE2")
+batches = Channel.from("SPIKE1", "SPIKE2")
+batch_and_dataset = batches.combine(layered_phip_data_ch)
+epitopes = Channel.fromPath("../analysis_scripts/epitopes.py")
+bde = batch_and_dataset.combine(epitopes)
+
+
+// CONSTRUCTION
+
+
+bde.view()
+
+
+
+//batch_layer.view()
+
 // RUN ALL ANALYSIS
-process analysis_plotting {
-    
-    publishDir "${params.phip_data_dir}/", mode: 'copy'
-    label 'single_thread_large_mem'
-    container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
-    
+//process analysis_plotting {
+//    
+//    publishDir "${params.phip_data_dir}/${batch}/", mode: 'copy'
+//    label 'single_thread_large_mem'
+//    container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
+//    
+//
+//    input:
+//        set(
+//            val(batch),
+//            file(layered_phip_ds)
+//        ) from batch_layer
+//        file epitopes from Channel.fromPath("../analysis-scripts/epitopes.py")
+//        file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
+//        file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
+//        file logo from Channel.fromPath("../analysis-scripts/logopairs.py")
+//        file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
+//        file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
+//        file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
+//
+//    output:
+//        file "*.pdf"
+//
+//    script:
+//        """
+//        set -eu
+//        python ${thresh} -dataset ${layered_phip_ds} -subgroup haarvi -out epitope_wt_thresholds-haarvi.pdf
+//        python ${thresh} -dataset ${layered_phip_ds} -subgroup moderna -out epitope_wt_thresholds-moderna.pdf
+//        python ${logo} -dataset ${layered_phip_ds} -subgroup moderna -batch ${batch} -out logopairs-moderna.pdf
+//        python ${logo} -dataset ${layered_phip_ds} -subgroup haarvi -batch ${batch} -out logopairs-haarvi.pdf
+//        python ${pca} -dataset ${layered_phip_ds} -batch ${batch} -out pca.pdf
+//        python ${heatmap} -dataset ${layered_phip_ds} -batch ${batch} -out  heatmap-boxplot.pdf
+//        python ${haarvi} -dataset ${layered_phip_ds} -batch ${batch} -out haarvi.pdf
+//        python ${nih} -dataset ${layered_phip_ds} -batch ${batch} -out nih.pdf
+//        """ 
+//}
 
-    input:
-        file layered_phip_ds from layered_phip_data_ch
-        file epitopes from Channel.fromPath("../analysis-scripts/epitopes.py")
-        file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
-        file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
-        file logo from Channel.fromPath("../analysis-scripts/logopairs-boxplot.py")
-        file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
-        file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
-        file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
-
-    output:
-        file "*.png"
-        //file "pca.png"
-        //file "heatmap-boxplot.png"
-        //file "logopairs-boxplot.png"
-        //file "haarvi.png"
-        //file "nih.png"
-
-    script:
-        """
-        set -eu
-        python ${thresh} -dataset ${layered_phip_ds} -subgroup haarvi -out epitope_wt_thresholds-haarvi.png
-        python ${thresh} -dataset ${layered_phip_ds} -subgroup moderna -out epitope_wt_thresholds-moderna.png
-        python ${logo} -dataset ${layered_phip_ds} -subgroup moderna -batch SPIKE2 -out logopairs.png
-        python ${logo} -dataset ${layered_phip_ds} -subgroup haarvi -batch SPIKE2 -out logopairs-haarvi.png
-        python ${pca} -dataset ${layered_phip_ds} -batch SPIKE2 -out pca.png
-        python ${heatmap} -dataset ${layered_phip_ds} -batch SPIKE2 -out  heatmap-boxplot.png
-        python ${haarvi} -dataset ${layered_phip_ds} -batch SPIKE2 -out haarvi.png
-        python ${nih} -dataset ${layered_phip_ds} -batch SPIKE2 -out nih.png
-        """ 
-}
