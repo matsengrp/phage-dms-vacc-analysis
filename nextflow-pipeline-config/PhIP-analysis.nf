@@ -11,7 +11,7 @@ peptide_reference_ch = Channel.fromPath("${params.peptide_table}")
 process generate_fasta_reference {
 
     label 'single_thread_large_mem'
-    container = 'quay.io/matsengrp/phippery:vacc-ms-analysis' 
+    //container = 'quay.io/matsengrp/phippery:vacc-ms-analysis' 
     //publishDir "${params.phip_data_dir}/"
 
     input: file "pep_ref" from peptide_reference_ch
@@ -31,9 +31,9 @@ process generate_index {
     //publishDir "${params.phip_data_dir}/reference"
     
     // if ("$params.alignment_tool" == "bowtie2"):
-    container = 'quay.io/jgallowa/bowtie2:vacc-ms-analysis' 
+    //container = 'quay.io/jgallowa/bowtie2:vacc-ms-analysis' 
     // else:
-    // container = 'quay.io/jgallowa/bowtie2:vacc-ms-analysis' 
+    // //container = 'quay.io/jgallowa/bowtie2:vacc-ms-analysis' 
     
     label 'multithread'
 
@@ -48,19 +48,20 @@ process generate_index {
 
     shell:    
 
-        //if ("$params.alignment_tool" == "bowtie")
-        //    """
-        //    mkdir peptide_index
-        //    bowtie-build --threads 4 \
-        //    ${pep_fasta} peptide_index/peptide
-        //    """
+        if ("$params.alignment_tool" == "bowtie")
+            """
+            mkdir peptide_index
+            bowtie-build --threads 4 \
+            ${pep_fasta} peptide_index/peptide
+            """
 
-        //else if ("$params.alignment_tool" == "bowtie2")
-        """
-        mkdir peptide_index
-        bowtie2-build --threads 4 \
-        ${pep_fasta} peptide_index/peptide
-        """
+        else if ("$params.alignment_tool" == "bowtie2")
+
+            """
+            mkdir peptide_index
+            bowtie2-build --threads 4 \
+            ${pep_fasta} peptide_index/peptide
+            """
 }
 
 
@@ -92,7 +93,7 @@ index_sample_ch = pep_channel_index
 process short_read_alignment {
 
     label 'multithread'
-    container = 'quay.io/jgallowa/bowtie2:vacc-ms-analysis' 
+    //container = 'quay.io/jgallowa/bowtie2:vacc-ms-analysis' 
 
     input:
         set( 
@@ -107,13 +108,26 @@ process short_read_alignment {
             file("${sample_id}.sam")
         ) into aligned_reads_sam
 
+    //shell:
+
+    //    """
+    //    set -eu
+    //    ${params.fastq_stream_func} ${respective_replicate_path} | \
+    //    bowtie2 ${params.align_args} -x ${index}/peptide - > ${sample_id}.sam
+    //    """
     shell:
 
-        """
-        set -eu
-        ${params.fastq_stream_func} ${respective_replicate_path} | \
-        bowtie2 ${params.align_args} -x ${index}/peptide - > ${sample_id}.sam
-        """
+        if ("$params.alignment_tool" == "bowtie")
+            """
+            ${params.fastq_stream_func} ${respective_replicate_path} | \
+            bowtie ${params.align_args} --sam -x ${index}/peptide - > ${sample_id}.sam
+            """
+
+        else if ("$params.alignment_tool" == "bowtie2")
+            """
+            ${params.fastq_stream_func} ${respective_replicate_path} | \
+            bowtie2 ${params.align_args} -x ${index}/peptide - > ${sample_id}.sam
+            """
 }
 
 
@@ -125,8 +139,8 @@ aligned_reads_sam.into{aligned_reads_for_counts; aligned_reads_for_stats}
 process sam_to_stats {
 
     label 'multithread'
-    //container = 'quay.io/biocontainers/samtools:1.3--h0592bc0_3'
-    container = 'quay.io/matsengrp/samtools-1.3:vacc-ms-analysis'
+    ////container = 'quay.io/biocontainers/samtools:1.3--h0592bc0_3'
+    //container = 'quay.io/matsengrp/samtools-1.3:vacc-ms-analysis'
 
     input:
         set(
@@ -149,7 +163,7 @@ process sam_to_stats {
 process sam_to_counts {
     
     label 'multithread'
-    container = 'quay.io/matsengrp/samtools-1.3:vacc-ms-analysis'
+    //container = 'quay.io/matsengrp/samtools-1.3:vacc-ms-analysis'
 
     input:
         set(
@@ -175,9 +189,9 @@ process sam_to_counts {
 // COLLECT AND MERGE ALL 
 process collect_phip_data {
     
-    publishDir "${params.phip_data_dir}/", mode: 'copy'
+    publishDir "${params.phip_data_dir}/${params.alignment_tool}", mode: 'copy'
     label 'single_thread_large_mem'
-    container = 'quay.io/matsengrp/phippery:vacc-ms-analysis' 
+    //container = 'quay.io/matsengrp/phippery:vacc-ms-analysis' 
 
     input:
         file all_counts_files from counts_ch.collect()
@@ -205,7 +219,7 @@ process compute_enrichment_stats {
     //publishDir "${params.phip_data_dir}/", mode: 'copy'
     publishDir "${params.phip_data_dir}/${params.alignment_tool}", mode: 'copy'
     label 'single_thread_large_mem'
-    //container = 'quay.io/matsengrp/phippery:latest' 
+    ////container = 'quay.io/matsengrp/phippery:latest' 
     container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
 
     input:
