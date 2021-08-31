@@ -2,10 +2,11 @@
 // PIPELINE KNOBS
 params{
 
+    plot_format = 'png'
 
     // ##### Dataset Name Prefix #####
     // Where you want all the files and intermediate file symlinks to go
-    phip_data_dir = '../final-figure-pdfs/bowtie2/'
+    phip_data_dir = '../alignment-comparison/'
 
 
     // ##### Dataset Name Prefix #####
@@ -23,7 +24,7 @@ params{
     // Bowtie kwargs you wish to include see 
     // http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#the-bowtie2-aligner
     // for details about alignment with Bowtie 2
-    align_args = '--trim3 32 --threads 4'
+    align_args = '--trim3 32 --threads 12'
 
     
     // ##### Sample Table #####
@@ -70,7 +71,7 @@ profiles{
             }            
             withLabel: 'multithread' {                  //CHANGEME
                 queue = 'campus-new'
-                cpus = 4
+                cpus = 12
                 memory = 30.GB
                 time = '4h'
                 clusterOptions = '-A overbaugh_j'

@@ -68,7 +68,7 @@ epitope_colors = {
 
 i=0
 for e, _ in EPITOPES.items():
-    if e in ["CTD-1", "CTD-2", "CTD-3"]: continue
+    if e in ["CTD-N", "CTD-2", "CTD-3"]: continue
     epitope_colors[e] = cmap.colors[i+8]
     i += 1
 
@@ -192,7 +192,7 @@ axd = fig.subplot_mosaic(
 )
 
 for epitope, metadata in EPITOPES.items():
-    if epitope in ["CTD-1", "CTD-2", "CTD-3"]: continue
+    if epitope in ["CTD-N", "CTD-2", "CTD-3"]: continue
     limits = metadata["limits"]
     pep_id = p_table.loc[p_table["Loc"].isin(range(limits[0], limits[1])),:].index
     p_table.loc[pep_id, "epitope"] = epitope
@@ -228,7 +228,7 @@ p_table.to_csv("./pca_p_table.csv")
 
 for i, lo in enumerate(["E", "F", "G"]):
     for epitope, metadata in EPITOPES.items():
-        if epitope in ["CTD-1", "CTD-2", "CTD-3"]: continue
+        if epitope in ["CTD-N", "CTD-2", "CTD-3"]: continue
         e_l = metadata["limits"]
         axd[lo].plot(
             p_table["Loc"].astype(int).values[e_l[0]:e_l[1]],
@@ -284,7 +284,7 @@ for pr, limits in protein_regions.items():
     axd["J"].add_patch(rect_v)
 
 for ep, metadata in EPITOPES.items():
-    if ep in ["CTD-1", "CTD-2", "CTD-3"]: continue
+    if ep in ["CTD-N", "CTD-2", "CTD-3"]: continue
     limits = metadata["limits"]
 
     start = limits[0]
@@ -307,7 +307,7 @@ epitope_order = [
     "NTD",
     "CTD",
     "FP", 
-    "Linker-HR2",
+    "stem helix-HR2",
 ]
 
 axd["I"].axis('off')

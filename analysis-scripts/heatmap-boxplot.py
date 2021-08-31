@@ -181,7 +181,7 @@ epitope_order = [
     "NTD",
     "CTD",
     "FP", 
-    "Linker-HR2",
+    "stem helix-HR2",
 ]
 
 first=True

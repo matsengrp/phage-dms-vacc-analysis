@@ -191,7 +191,7 @@ for epitope, metadata in EPITOPES.items():
 
     
     kw = dict(ha="center", va="center", fontsize=19, color="black")
-    sublabel = "B" if epitope == "CTD-1" else sublabel 
+    sublabel = "B" if epitope == "CTD-N" else sublabel 
     sublabel = "A" if epitope == "NTD" else sublabel 
     sublabel = "A" if group != "moderna" else sublabel
     a = mosaic[0,0]

@@ -58,7 +58,7 @@ epitope_colors = {
 
 i=0
 for e, _ in EPITOPES.items():
-    if e in ["CTD-1", "CTD-2", "CTD-3"]: continue
+    if e in ["CTD-N", "CTD-2", "CTD-3"]: continue
     epitope_colors[e] = cmap.colors[i+8]
     i += 1
 
@@ -162,7 +162,7 @@ epitope_order = [
     "NTD",
     "CTD",
     "FP", 
-    "Linker-HR2",
+    "stem helix-HR2",
 ]
 
 subplot_keys = [

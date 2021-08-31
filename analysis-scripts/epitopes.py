@@ -12,7 +12,7 @@ EPITOPES = {
         "left border": 550,
         "right border": 685
     },
-    "CTD-1" : {
+    "CTD-N" : {
         "limits": [545, 580], 
         "binding threshold": 120,
         "left border": 550,
@@ -24,7 +24,7 @@ EPITOPES = {
         "left border": 810,
         "right border": 829
     },
-    "Linker-HR2" : {
+    "stem helix-HR2" : {
         "limits": [1135,1170], 
         "binding threshold": 150,
         "left border": 1141,
