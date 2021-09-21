@@ -28,6 +28,8 @@ for i, (row, data) in enumerate(sample_table.iterrows()):
     bio_attr["sample_name"].append(f"sample_{i}")
     sra_meta["sample_name"].append(f"sample_{i}")
     sra_meta["filename0"].append(os.path.basename(data["fastq_filename"]))
+    lib_id = "-".join(data["experiment"].split("/"))
+    sra_meta["library id"].append(data["library_batch"]+"-"+lib_id)
     bio_attr["collection date"].append(data["experiment"])
 
 bio_attr["isolate"]="not applicable"
