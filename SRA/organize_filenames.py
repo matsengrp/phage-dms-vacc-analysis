@@ -25,23 +25,23 @@ for i, (row, data) in enumerate(sample_table.iterrows()):
     #source_dupes[os.path.basename(source)].append(source)
     #assert dest not in unique    
     #unique.add(dest)
-    sra_meta["sample_name"].append(f"sample_{i}")
     bio_attr["sample_name"].append(f"sample_{i}")
+    sra_meta["sample_name"].append(f"sample_{i}")
     sra_meta["filename0"].append(os.path.basename(data["fastq_filename"]))
-    sra_meta["collection date"].append(data["experiment"])
+    bio_attr["collection date"].append(data["experiment"])
 
-sra_meta["isolate"]="not applicable"
-sra_meta["host"]="Escherichia coli"
-sra_meta["lab host"]="Escherichia coli"
-sra_meta["geographic location"]="USA:Seattle"
-sra_meta["isolation source"] = "T7 phage library"
+bio_attr["isolate"]="not applicable"
+bio_attr["host"]="Escherichia coli"
+bio_attr["lab host"]="Escherichia coli"
+bio_attr["geographic location"]="USA:Seattle"
+bio_attr["isolation source"] = "T7 phage library"
 
-bio_attr["Organism:"] = "Escherichia phage T7"
-bio_attr["Instrument:"] = "Illumina MiSeq"
-bio_attr["Strategy:"] = "CLONEEND"
-bio_attr["Source:"] = "GENOMIC"
-bio_attr["Selection:"] = "PCR"
-bio_attr["Layout:"] = "SINGLE"
+sra_meta["Organism:"] = "Escherichia phage T7"
+sra_meta["Instrument:"] = "Illumina MiSeq"
+sra_meta["Strategy:"] = "CLONEEND"
+sra_meta["Source:"] = "GENOMIC"
+sra_meta["Selection:"] = "PCR"
+sra_meta["Layout:"] = "SINGLE"
     #copyfile(source, dest)
 
 

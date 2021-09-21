@@ -1,634 +1,634 @@
-sample_name	Organism:	Instrument:	Strategy:	Source:	Selection:	Layout:
-sample_0	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_1	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_2	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_3	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_4	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_5	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_6	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_7	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_8	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_9	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_10	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_11	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_12	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_13	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_14	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_15	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_16	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_17	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_18	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_19	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_20	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_21	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_22	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_23	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_24	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_25	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_26	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_27	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_28	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_29	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_30	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_31	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_32	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_33	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_34	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_35	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_36	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_37	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_38	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_39	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_40	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_41	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_42	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_43	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_44	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_45	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_46	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_47	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_48	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_49	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_50	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_51	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_52	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_53	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_54	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_55	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_56	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_57	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_58	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_59	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_60	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_61	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_62	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_63	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_64	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_65	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_66	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_67	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_68	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_69	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_70	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_71	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_72	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_73	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_74	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_75	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_76	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_77	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_78	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_79	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_80	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_81	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_82	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_83	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_84	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_85	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_86	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_87	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_88	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_89	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_90	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_91	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_92	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_93	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_94	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_95	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_96	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_97	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_98	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_99	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_100	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_101	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_102	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_103	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_104	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_105	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_106	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_107	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_108	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_109	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_110	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_111	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_112	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_113	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_114	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_115	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_116	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_117	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_118	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_119	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_120	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_121	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_122	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_123	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_124	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_125	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_126	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_127	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_128	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_129	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_130	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_131	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_132	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_133	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_134	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_135	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_136	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_137	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_138	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_139	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_140	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_141	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_142	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_143	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_144	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_145	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_146	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_147	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_148	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_149	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_150	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_151	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_152	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_153	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_154	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_155	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_156	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_157	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_158	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_159	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_160	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_161	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_162	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_163	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_164	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_165	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_166	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_167	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_168	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_169	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_170	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_171	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_172	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_173	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_174	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_175	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_176	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_177	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_178	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_179	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_180	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_181	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_182	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_183	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_184	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_185	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_186	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_187	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_188	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_189	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_190	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_191	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_192	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_193	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_194	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_195	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_196	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_197	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_198	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_199	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_200	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_201	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_202	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_203	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_204	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_205	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_206	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_207	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_208	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_209	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_210	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_211	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_212	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_213	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_214	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_215	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_216	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_217	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_218	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_219	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_220	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_221	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_222	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_223	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_224	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_225	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_226	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_227	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_228	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_229	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_230	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_231	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_232	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_233	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_234	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_235	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_236	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_237	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_238	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_239	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_240	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_241	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_242	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_243	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_244	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_245	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_246	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_247	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_248	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_249	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_250	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_251	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_252	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_253	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_254	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_255	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_256	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_257	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_258	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_259	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_260	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_261	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_262	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_263	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_264	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_265	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_266	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_267	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_268	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_269	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_270	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_271	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_272	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_273	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_274	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_275	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_276	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_277	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_278	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_279	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_280	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_281	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_282	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_283	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_284	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_285	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_286	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_287	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_288	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_289	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_290	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_291	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_292	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_293	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_294	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_295	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_296	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_297	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_298	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_299	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_300	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_301	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_302	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_303	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_304	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_305	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_306	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_307	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_308	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_309	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_310	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_311	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_312	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_313	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_314	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_315	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_316	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_317	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_318	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_319	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_320	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_321	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_322	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_323	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_324	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_325	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_326	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_327	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_328	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_329	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_330	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_331	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_332	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_333	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_334	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_335	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_336	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_337	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_338	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_339	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_340	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_341	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_342	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_343	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_344	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_345	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_346	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_347	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_348	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_349	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_350	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_351	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_352	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_353	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_354	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_355	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_356	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_357	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_358	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_359	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_360	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_361	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_362	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_363	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_364	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_365	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_366	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_367	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_368	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_369	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_370	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_371	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_372	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_373	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_374	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_375	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_376	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_377	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_378	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_379	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_380	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_381	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_382	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_383	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_384	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_385	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_386	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_387	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_388	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_389	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_390	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_391	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_392	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_393	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_394	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_395	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_396	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_397	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_398	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_399	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_400	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_401	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_402	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_403	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_404	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_405	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_406	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_407	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_408	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_409	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_410	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_411	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_412	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_413	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_414	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_415	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_416	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_417	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_418	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_419	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_420	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_421	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_422	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_423	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_424	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_425	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_426	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_427	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_428	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_429	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_430	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_431	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_432	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_433	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_434	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_435	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_436	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_437	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_438	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_439	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_440	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_441	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_442	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_443	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_444	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_445	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_446	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_447	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_448	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_449	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_450	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_451	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_452	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_453	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_454	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_455	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_456	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_457	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_458	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_459	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_460	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_461	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_462	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_463	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_464	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_465	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_466	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_467	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_468	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_469	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_470	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_471	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_472	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_473	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_474	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_475	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_476	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_477	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_478	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_479	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_480	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_481	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_482	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_483	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_484	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_485	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_486	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_487	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_488	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_489	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_490	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_491	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_492	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_493	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_494	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_495	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_496	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_497	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_498	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_499	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_500	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_501	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_502	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_503	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_504	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_505	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_506	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_507	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_508	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_509	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_510	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_511	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_512	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_513	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_514	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_515	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_516	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_517	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_518	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_519	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_520	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_521	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_522	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_523	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_524	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_525	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_526	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_527	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_528	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_529	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_530	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_531	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_532	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_533	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_534	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_535	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_536	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_537	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_538	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_539	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_540	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_541	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_542	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_543	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_544	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_545	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_546	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_547	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_548	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_549	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_550	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_551	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_552	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_553	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_554	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_555	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_556	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_557	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_558	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_559	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_560	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_561	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_562	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_563	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_564	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_565	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_566	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_567	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_568	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_569	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_570	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_571	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_572	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_573	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_574	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_575	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_576	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_577	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_578	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_579	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_580	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_581	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_582	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_583	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_584	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_585	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_586	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_587	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_588	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_589	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_590	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_591	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_592	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_593	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_594	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_595	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_596	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_597	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_598	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_599	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_600	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_601	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_602	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_603	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_604	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_605	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_606	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_607	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_608	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_609	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_610	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_611	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_612	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_613	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_614	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_615	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_616	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_617	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_618	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_619	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_620	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_621	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_622	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_623	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_624	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_625	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_626	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_627	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_628	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_629	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_630	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_631	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
-sample_632	Escherichia phage T7	Illumina MiSeq	CLONEEND	GENOMIC	PCR	SINGLE
+sample_name	collection date	isolate	host	lab host	geographic location	isolation source
+sample_0	5/4/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_1	5/4/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_2	6/8/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_3	6/8/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_4	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_5	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_6	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_7	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_8	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_9	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_10	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_11	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_12	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_13	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_14	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_15	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_16	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_17	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_18	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_19	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_20	6/18/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_21	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_22	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_23	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_24	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_25	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_26	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_27	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_28	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_29	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_30	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_31	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_32	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_33	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_34	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_35	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_36	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_37	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_38	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_39	7/2/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_40	7/16/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_41	7/16/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_42	8/3/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_43	8/3/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_44	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_45	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_46	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_47	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_48	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_49	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_50	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_51	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_52	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_53	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_54	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_55	9/21/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_56	10/12/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_57	10/12/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_58	10/12/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_59	10/12/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_60	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_61	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_62	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_63	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_64	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_65	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_66	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_67	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_68	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_69	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_70	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_71	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_72	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_73	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_74	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_75	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_76	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_77	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_78	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_79	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_80	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_81	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_82	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_83	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_84	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_85	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_86	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_87	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_88	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_89	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_90	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_91	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_92	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_93	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_94	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_95	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_96	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_97	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_98	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_99	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_100	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_101	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_102	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_103	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_104	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_105	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_106	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_107	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_108	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_109	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_110	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_111	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_112	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_113	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_114	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_115	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_116	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_117	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_118	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_119	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_120	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_121	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_122	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_123	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_124	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_125	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_126	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_127	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_128	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_129	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_130	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_131	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_132	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_133	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_134	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_135	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_136	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_137	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_138	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_139	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_140	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_141	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_142	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_143	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_144	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_145	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_146	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_147	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_148	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_149	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_150	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_151	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_152	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_153	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_154	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_155	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_156	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_157	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_158	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_159	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_160	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_161	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_162	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_163	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_164	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_165	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_166	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_167	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_168	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_169	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_170	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_171	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_172	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_173	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_174	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_175	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_176	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_177	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_178	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_179	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_180	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_181	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_182	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_183	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_184	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_185	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_186	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_187	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_188	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_189	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_190	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_191	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_192	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_193	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_194	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_195	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_196	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_197	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_198	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_199	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_200	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_201	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_202	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_203	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_204	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_205	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_206	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_207	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_208	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_209	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_210	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_211	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_212	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_213	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_214	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_215	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_216	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_217	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_218	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_219	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_220	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_221	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_222	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_223	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_224	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_225	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_226	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_227	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_228	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_229	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_230	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_231	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_232	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_233	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_234	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_235	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_236	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_237	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_238	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_239	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_240	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_241	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_242	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_243	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_244	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_245	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_246	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_247	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_248	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_249	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_250	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_251	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_252	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_253	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_254	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_255	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_256	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_257	1/26/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_258	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_259	2/8/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_260	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_261	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_262	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_263	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_264	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_265	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_266	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_267	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_268	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_269	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_270	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_271	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_272	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_273	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_274	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_275	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_276	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_277	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_278	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_279	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_280	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_281	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_282	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_283	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_284	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_285	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_286	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_287	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_288	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_289	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_290	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_291	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_292	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_293	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_294	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_295	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_296	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_297	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_298	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_299	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_300	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_301	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_302	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_303	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_304	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_305	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_306	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_307	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_308	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_309	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_310	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_311	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_312	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_313	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_314	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_315	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_316	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_317	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_318	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_319	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_320	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_321	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_322	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_323	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_324	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_325	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_326	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_327	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_328	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_329	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_330	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_331	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_332	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_333	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_334	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_335	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_336	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_337	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_338	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_339	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_340	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_341	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_342	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_343	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_344	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_345	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_346	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_347	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_348	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_349	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_350	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_351	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_352	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_353	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_354	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_355	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_356	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_357	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_358	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_359	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_360	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_361	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_362	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_363	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_364	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_365	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_366	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_367	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_368	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_369	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_370	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_371	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_372	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_373	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_374	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_375	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_376	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_377	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_378	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_379	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_380	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_381	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_382	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_383	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_384	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_385	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_386	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_387	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_388	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_389	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_390	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_391	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_392	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_393	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_394	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_395	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_396	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_397	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_398	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_399	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_400	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_401	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_402	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_403	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_404	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_405	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_406	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_407	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_408	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_409	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_410	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_411	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_412	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_413	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_414	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_415	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_416	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_417	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_418	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_419	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_420	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_421	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_422	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_423	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_424	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_425	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_426	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_427	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_428	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_429	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_430	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_431	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_432	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_433	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_434	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_435	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_436	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_437	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_438	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_439	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_440	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_441	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_442	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_443	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_444	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_445	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_446	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_447	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_448	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_449	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_450	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_451	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_452	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_453	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_454	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_455	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_456	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_457	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_458	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_459	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_460	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_461	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_462	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_463	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_464	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_465	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_466	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_467	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_468	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_469	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_470	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_471	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_472	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_473	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_474	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_475	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_476	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_477	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_478	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_479	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_480	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_481	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_482	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_483	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_484	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_485	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_486	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_487	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_488	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_489	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_490	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_491	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_492	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_493	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_494	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_495	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_496	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_497	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_498	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_499	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_500	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_501	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_502	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_503	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_504	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_505	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_506	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_507	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_508	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_509	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_510	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_511	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_512	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_513	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_514	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_515	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_516	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_517	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_518	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_519	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_520	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_521	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_522	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_523	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_524	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_525	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_526	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_527	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_528	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_529	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_530	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_531	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_532	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_533	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_534	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_535	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_536	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_537	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_538	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_539	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_540	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_541	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_542	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_543	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_544	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_545	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_546	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_547	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_548	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_549	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_550	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_551	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_552	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_553	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_554	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_555	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_556	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_557	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_558	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_559	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_560	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_561	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_562	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_563	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_564	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_565	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_566	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_567	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_568	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_569	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_570	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_571	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_572	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_573	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_574	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_575	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_576	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_577	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_578	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_579	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_580	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_581	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_582	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_583	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_584	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_585	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_586	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_587	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_588	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_589	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_590	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_591	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_592	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_593	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_594	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_595	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_596	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_597	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_598	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_599	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_600	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_601	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_602	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_603	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_604	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_605	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_606	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_607	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_608	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_609	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_610	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_611	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_612	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_613	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_614	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_615	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_616	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_617	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_618	3/30/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_619	4/7/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_620	4/7/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_621	4/7/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_622	4/7/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_623	4/7/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_624	4/7/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_625	4/7/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_626	4/7/21	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_627	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_628	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_629	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_630	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_631	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
+sample_632	8/27/20	not applicable	Escherichia coli	Escherichia coli	USA:Seattle	T7 phage library
