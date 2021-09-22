@@ -1,31 +1,13 @@
 import xarray as xr
 import numpy as np
 import pandas as pd
-###
 
 import phippery
 from phippery.normalize import svd_rank_reduction,enrichment, standardized_enrichment, differential_selection_wt_mut, rank_data, svd_aa_loc, size_factors, cpm
 from phippery.collapse import collapse_sample_groups, pairwise_correlation_by_sample_group
 from phippery.utils import *
-#from phippery.tidy import tidy_ds
-#from phippery.modeling import neg_binom_model
-
-
-#import pickle
-#from collections import defaultdict
-#import copy
-#from numpy.linalg import svd
-#import scipy.stats as ss
-#import matplotlib.pyplot as plt
-#from matplotlib.colors import to_hex
-#from matplotlib import cm
-#import seaborn as sns
-#import time
-#import warnings
-#from adjustText import adjust_text
 import sys
 import argparse
-#warnings.filterwarnings("ignore")
 
 parser = argparse.ArgumentParser(description='')
 parser.add_argument('-dataset', type=str)
@@ -57,19 +39,7 @@ for batch, batch_ds in iter_sample_groups(ds, "library_batch"):
 
     emp_beads_ds = ret_ds.loc[dict(sample_id=list(emp_beads))]
     size_factors(emp_beads_ds)
-
-    #beads_ds = emp_beads_ds.loc[dict(sample_id=batch_beads)]
     emp_ds = emp_beads_ds.loc[dict(sample_id=emp)]
-
-    #neg_binom_model(
-    #    emp_ds,
-    #    beads_ds,
-    #    nb_p=2,
-    #    trim_percentile=99.9,
-    #    data_table="size_factors",
-    #    inplace=True,
-    #    new_table_name="neg_binom_mlxp"
-    #)
 
     differential_selection_wt_mut(
             emp_ds, 

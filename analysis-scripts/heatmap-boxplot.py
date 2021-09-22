@@ -4,11 +4,6 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 import matplotlib.patches as patches
 import matplotlib.font_manager
-#plt.rcParams["font.family"] = "Helvetica"
-#from matplotlib import rc
-#rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
-#rc('font',**{'family':'serif','serif':['Times']})
-#rc('text', usetex=True)
 matplotlib.pyplot.rcParams["font.family"] = "DejaVu Sans"
 import seaborn as sns
 from statannot import add_stat_annotation

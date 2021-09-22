@@ -328,10 +328,6 @@ for epitope, metadata in EPITOPES.items():
             bbox_to_anchor=[0.5,0.15]
     )
     axd[chem_legend_ax].axis("off")
-
-    #axd[diff_sel_plot].set_title(f"{epitope}, {batch} replicates with wt binding above {bt}\n{num_pairs} paired samples")
-
-
     axd[diff_sel_plot].set_ylabel(f"Summed\n differential selection")
     axd[diff_sel_plot].axhline(0, color="black", linestyle="--")
     kw = dict(ha="center", va="center", fontsize=18, color="black", rotation=0)

@@ -33,10 +33,7 @@ args = parser.parse_args()
 
 batch=args.batch
 metric = args.enrichment_metric
-#highlight="sample_group"
 np.random.seed(24)
-#mode_agg="wt_only"
-#meta=f"04-27-21/"
 ag="sum"
 colormap="Set3"
 epitope_colormap="Set3"
