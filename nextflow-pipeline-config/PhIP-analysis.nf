@@ -11,8 +11,6 @@ peptide_reference_ch = Channel.fromPath("${params.peptide_table}")
 process generate_fasta_reference {
 
     label 'single_thread_large_mem'
-    //container = 'quay.io/matsengrp/phippery:vacc-ms-analysis' 
-    //publishDir "${params.phip_data_dir}/"
 
     input: file "pep_ref" from peptide_reference_ch
 
@@ -28,13 +26,6 @@ process generate_fasta_reference {
 // GENERATE INDEX
 process generate_index {
  
-    //publishDir "${params.phip_data_dir}/reference"
-    
-    // if ("$params.alignment_tool" == "bowtie2"):
-    //container = 'quay.io/jgallowa/bowtie2:vacc-ms-analysis' 
-    // else:
-    // //container = 'quay.io/jgallowa/bowtie2:vacc-ms-analysis' 
-    
     label 'multithread'
 
     input:
@@ -108,13 +99,6 @@ process short_read_alignment {
             file("${sample_id}.sam")
         ) into aligned_reads_sam
 
-    //shell:
-
-    //    """
-    //    set -eu
-    //    ${params.fastq_stream_func} ${respective_replicate_path} | \
-    //    bowtie2 ${params.align_args} -x ${index}/peptide - > ${sample_id}.sam
-    //    """
     shell:
 
         if ("$params.alignment_tool" == "bowtie")
@@ -250,7 +234,6 @@ hmb = Channel.fromPath("../analysis-scripts/heatmap-boxplot.py").combine(pca)
 // RUN PCA and Plot heatmap
 process pca_heatmap {
     
-    //publishDir "${params.phip_data_dir}/${batch}/${params.plot_format}/", mode: 'copy'
     publishDir "${params.phip_data_dir}/${params.alignment_tool}/${batch}/${params.plot_format}", mode: 'copy'
     label 'single_thread_large_mem'
     container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
@@ -264,13 +247,6 @@ process pca_heatmap {
             file(layered_phip_ds),
             file(epitopes)
         ) from hmb
-        //file epitopes from Channel.fromPath("../analysis-scripts/epitopes.py")
-        //file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
-        //file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
-        //file logo from Channel.fromPath("../analysis-scripts/logopairs.py")
-        //file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
-        //file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
-        //file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
 
     output:
         file "*.${params.plot_format}"
@@ -281,12 +257,6 @@ process pca_heatmap {
         python ${pca} -dataset ${layered_phip_ds} -batch ${batch} -out pca.${params.plot_format}
         python ${heatmap} -dataset ${layered_phip_ds} -batch ${batch} -out  heatmap-boxplot.${params.plot_format}
         """ 
-        //python ${thresh} -dataset ${layered_phip_ds} -subgroup haarvi -out epitope_wt_thresholds-haarvi.${params.plot_format}
-        //python ${thresh} -dataset ${layered_phip_ds} -subgroup moderna -out epitope_wt_thresholds-moderna.${params.plot_format}
-        //python ${logo} -dataset ${layered_phip_ds} -subgroup moderna -batch ${batch} -out logopairs-moderna.${params.plot_format}
-        //python ${logo} -dataset ${layered_phip_ds} -subgroup haarvi -batch ${batch} -out logopairs-haarvi.${params.plot_format}
-        //python ${haarvi} -dataset ${layered_phip_ds} -batch ${batch} -out haarvi.${params.plot_format}
-        //python ${nih} -dataset ${layered_phip_ds} -batch ${batch} -out nih.${params.plot_format}
 }
 
 logo = Channel.fromPath("../analysis-scripts/logopairs.py").combine(bde[1]).into(2)
@@ -294,7 +264,6 @@ logo = Channel.fromPath("../analysis-scripts/logopairs.py").combine(bde[1]).into
 // RUN logoplot 1
 process logoplots_moderna {
     
-    //publishDir "${params.phip_data_dir}/${batch}/${params.plot_format}/", mode: 'copy'
     publishDir "${params.phip_data_dir}/${params.alignment_tool}/${batch}/${params.plot_format}", mode: 'copy'
     label 'single_thread_large_mem'
     container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
@@ -307,13 +276,6 @@ process logoplots_moderna {
             file(layered_phip_ds),
             file(epitopes)
         ) from logo[0]
-        //file epitopes from Channel.fromPath("../analysis-scripts/epitopes.py")
-        //file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
-        //file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
-        //file logo from Channel.fromPath("../analysis-scripts/logopairs.py")
-        //file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
-        //file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
-        //file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
 
     output:
         file "*.${params.plot_format}"
@@ -323,17 +285,11 @@ process logoplots_moderna {
         set -eu
         python ${logo} -dataset ${layered_phip_ds} -subgroup moderna -batch ${batch} -out logopairs-moderna.${params.plot_format}
         """ 
-        //python ${thresh} -dataset ${layered_phip_ds} -subgroup haarvi -out epitope_wt_thresholds-haarvi.${params.plot_format}
-        //python ${thresh} -dataset ${layered_phip_ds} -subgroup moderna -out epitope_wt_thresholds-moderna.${params.plot_format}
-        //python ${logo} -dataset ${layered_phip_ds} -subgroup haarvi -batch ${batch} -out logopairs-haarvi.${params.plot_format}
-        //python ${haarvi} -dataset ${layered_phip_ds} -batch ${batch} -out haarvi.${params.plot_format}
-        //python ${nih} -dataset ${layered_phip_ds} -batch ${batch} -out nih.${params.plot_format}
 }
 
 // RUN logoplot 2
 process logoplots_haarvi {
     
-    //publishDir "${params.phip_data_dir}/${batch}/${params.plot_format}/", mode: 'copy'
     publishDir "${params.phip_data_dir}/${params.alignment_tool}/${batch}/${params.plot_format}", mode: 'copy'
     label 'single_thread_large_mem'
     container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
@@ -346,13 +302,6 @@ process logoplots_haarvi {
             file(layered_phip_ds),
             file(epitopes)
         ) from logo[1]
-        //file epitopes from Channel.fromPath("../analysis-scripts/epitopes.py")
-        //file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
-        //file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
-        //file logo from Channel.fromPath("../analysis-scripts/logopairs.py")
-        //file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
-        //file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
-        //file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
 
     output:
         file "*.${params.plot_format}"
@@ -362,17 +311,12 @@ process logoplots_haarvi {
         set -eu
         python ${logo} -dataset ${layered_phip_ds} -subgroup haarvi -batch ${batch} -out logopairs-haarvi.${params.plot_format}
         """ 
-        //python ${thresh} -dataset ${layered_phip_ds} -subgroup haarvi -out epitope_wt_thresholds-haarvi.${params.plot_format}
-        //python ${thresh} -dataset ${layered_phip_ds} -subgroup moderna -out epitope_wt_thresholds-moderna.${params.plot_format}
-        //python ${haarvi} -dataset ${layered_phip_ds} -batch ${batch} -out haarvi.${params.plot_format}
-        //python ${nih} -dataset ${layered_phip_ds} -batch ${batch} -out nih.${params.plot_format}
 }
 
 thr = Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py").combine(bde[2]).into(2)
 
 process threshold_haarvi {
     
-    //publishDir "${params.phip_data_dir}/${batch}/${params.plot_format}/", mode: 'copy'
     publishDir "${params.phip_data_dir}/${params.alignment_tool}/${batch}/${params.plot_format}", mode: 'copy'
     label 'single_thread_large_mem'
     container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
@@ -385,13 +329,6 @@ process threshold_haarvi {
             file(layered_phip_ds),
             file(epitopes)
         ) from thr[0]
-        //file epitopes from Channel.fromPath("../analysis-scripts/epitopes.py")
-        //file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
-        //file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
-        //file logo from Channel.fromPath("../analysis-scripts/logopairs.py")
-        //file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
-        //file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
-        //file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
 
     output:
         file "*.${params.plot_format}"
@@ -401,14 +338,10 @@ process threshold_haarvi {
         set -eu
         python ${thresh} -dataset ${layered_phip_ds} -subgroup haarvi -out epitope_wt_thresholds-haarvi.${params.plot_format}
         """ 
-        //python ${thresh} -dataset ${layered_phip_ds} -subgroup moderna -out epitope_wt_thresholds-moderna.${params.plot_format}
-        //python ${haarvi} -dataset ${layered_phip_ds} -batch ${batch} -out haarvi.${params.plot_format}
-        //python ${nih} -dataset ${layered_phip_ds} -batch ${batch} -out nih.${params.plot_format}
 }
 
 process threshold_moderna {
     
-    //publishDir "${params.phip_data_dir}/${batch}/${params.plot_format}/", mode: 'copy'
     publishDir "${params.phip_data_dir}/${params.alignment_tool}/${batch}/${params.plot_format}", mode: 'copy'
     label 'single_thread_large_mem'
     container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
@@ -421,13 +354,6 @@ process threshold_moderna {
             file(layered_phip_ds),
             file(epitopes)
         ) from thr[1]
-        //file epitopes from Channel.fromPath("../analysis-scripts/epitopes.py")
-        //file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
-        //file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
-        //file logo from Channel.fromPath("../analysis-scripts/logopairs.py")
-        //file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
-        //file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
-        //file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
 
     output:
         file "*.${params.plot_format}"
@@ -437,15 +363,12 @@ process threshold_moderna {
         set -eu
         python ${thresh} -dataset ${layered_phip_ds} -subgroup moderna -out epitope_wt_thresholds-moderna.${params.plot_format}
         """ 
-        //python ${haarvi} -dataset ${layered_phip_ds} -batch ${batch} -out haarvi.${params.plot_format}
-        //python ${nih} -dataset ${layered_phip_ds} -batch ${batch} -out nih.${params.plot_format}
 }
 
 haa = Channel.fromPath("../analysis-scripts/haarvi-subgroups.py").combine(bde[3])
 
 process haarvi_subgroup {
     
-    //publishDir "${params.phip_data_dir}/${batch}/${params.plot_format}/", mode: 'copy'
     publishDir "${params.phip_data_dir}/${params.alignment_tool}/${batch}/${params.plot_format}", mode: 'copy'
     label 'single_thread_large_mem'
     container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
@@ -458,13 +381,6 @@ process haarvi_subgroup {
             file(layered_phip_ds),
             file(epitopes)
         ) from haa
-        //file epitopes from Channel.fromPath("../analysis-scripts/epitopes.py")
-        //file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
-        //file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
-        //file logo from Channel.fromPath("../analysis-scripts/logopairs.py")
-        //file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
-        //file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
-        //file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
 
     output:
         file "*.${params.plot_format}"
@@ -474,14 +390,12 @@ process haarvi_subgroup {
         set -eu
         python ${haarvi} -dataset ${layered_phip_ds} -batch ${batch} -out haarvi.${params.plot_format}
         """ 
-        //python ${nih} -dataset ${layered_phip_ds} -batch ${batch} -out nih.${params.plot_format}
 }
 
 nihc = Channel.fromPath("../analysis-scripts/nih-subgroup.py").combine(bde[4])
 
 process nih_subgroup {
     
-    //publishDir "${params.phip_data_dir}/${batch}/${params.plot_format}/", mode: 'copy'
     publishDir "${params.phip_data_dir}/${params.alignment_tool}/${batch}/${params.plot_format}", mode: 'copy'
     label 'single_thread_large_mem'
     container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
@@ -494,13 +408,6 @@ process nih_subgroup {
             file(layered_phip_ds),
             file(epitopes)
         ) from nihc
-        //file epitopes from Channel.fromPath("../analysis-scripts/epitopes.py")
-        //file pca from Channel.fromPath("../analysis-scripts/pca-scatter-directions.py")
-        //file heatmap from Channel.fromPath("../analysis-scripts/heatmap-boxplot.py")
-        //file logo from Channel.fromPath("../analysis-scripts/logopairs.py")
-        //file haarvi from Channel.fromPath("../analysis-scripts/haarvi-subgroups.py")
-        //file nih from Channel.fromPath("../analysis-scripts/nih-subgroup.py")
-        //file thresh from Channel.fromPath("../analysis-scripts/threshold-epi-binding-barplot.py")
 
     output:
         file "*.${params.plot_format}"
