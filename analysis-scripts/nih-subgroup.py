@@ -430,5 +430,5 @@ plt.tight_layout()
 #fig.savefig(f"../figures/heatmap-boxplot/{metric}-{batch}-36d.pdf")
 
 #fig.suptitle(f"{epitope} Epitope Region S{limits[0]} - S{limits[1]}")
-fig.savefig(args.out)
+fig.savefig(args.out, dpi=600)
 

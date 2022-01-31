@@ -54,7 +54,7 @@ profiles{
 
             // DEFINE CONTAINERS FOR EACH PROCESS
             withName: generate_fasta_reference {
-                container = 'quay.io/matsengrp/phippery:latest' 
+                container = 'quay.io/matsengrp/vacc-ms-analysis:latest' 
             }
             withName: generate_index {
                 container = 'quay.io/jgallowa/bowtie2:latest' 
@@ -69,7 +69,7 @@ profiles{
                 container = 'quay.io/biocontainers/samtools:1.3--h0592bc0_3'
             }
             withName: collect_phip_data {
-                container = 'quay.io/matsengrp/phippery:latest'
+                container = 'quay.io/matsengrp/vacc-ms-analysis:latest'
             }  
             
             // DEFINE WHERE PROCESSES GET SUBMITTED 

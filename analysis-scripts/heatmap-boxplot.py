@@ -437,4 +437,4 @@ for a in axd:
         item.set_fontsize(14)
 
 plt.tight_layout()
-fig.savefig(args.out)
+fig.savefig(args.out, dpi=600)

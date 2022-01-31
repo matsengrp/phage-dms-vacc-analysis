@@ -319,7 +319,7 @@ for ax in ["A", "B", "C", "D", "E", "F"]:
     axd[ax].get_xaxis().set_visible(False)
 
 plt.tight_layout()
-fig.savefig(args.out)
+fig.savefig(args.out, dpi=600)
 
 
 

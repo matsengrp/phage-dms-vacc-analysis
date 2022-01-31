@@ -363,7 +363,7 @@ axd["C"].set_xlabel(
     f"PC 1 ({round(pca.explained_variance_ratio_[0]*100, 2)}% EVR)"
 )
 axd["C"].set_ylabel(
-    f"PC 2 ({round(pca.explained_variance_ratio_[1]*100, 2)}% EVR)"
+    f"Scores\nPC 2 ({round(pca.explained_variance_ratio_[1]*100, 2)}% EVR)"
 )
 
 axd["D"].set_xlabel(
@@ -375,10 +375,28 @@ axd["D"].set_ylabel(
 
 axd["A"].set_xlabel("PC 1")
 axd["A"].set_ylabel("Loadings\nPC 2")
-axd["C"].set_ylabel("Scores\nPC 2")
+#axd["C"].set_ylabel("Scores\nPC 2")
 axd["B"].set_xlabel("PC 1")
 axd["B"].set_ylabel("PC 3")
 
 plt.tight_layout()
-fig.savefig(args.out)
+fig.savefig(args.out, dpi=600)
+# out = "".join(args.out.split(".")[:-1])
+
+#from PIL import Image
+#from io import BytesIO
+#png1 = BytesIO()
+#fig.savefig(png1, format='png')
+#
+## (2) load this image into PIL
+#png2 = Image.open(png1)
+#
+## (3) save as TIFF
+#png2.save(args.out)
+#png1.close()
+
+
+
+
+
 

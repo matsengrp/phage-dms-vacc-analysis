@@ -196,6 +196,7 @@ for epitope, metadata in EPITOPES.items():
     sublabel = "A" if group != "moderna" else sublabel
     a = mosaic[0,0]
     axd[a].text(-0.16, 1.10, f"{sublabel})", transform=axd[a].transAxes, **kw)
+    #axd[a].text(
 
     axd[mosaic[0,0]].set_title(l1, size=18)
     axd[mosaic[0,5]].set_title(l2, size=18)
@@ -206,7 +207,6 @@ for epitope, metadata in EPITOPES.items():
             is_in=paired_participants
     )
     ds_paired = ds_cur.loc[dict(sample_id=paired_samples)]
-
     for i, (pid, pid_ds) in enumerate(iter_sample_groups(ds_paired, "participant_ID")):
         #continue
 
@@ -279,7 +279,6 @@ for epitope, metadata in EPITOPES.items():
         for item in ([ax.xaxis.label, ax.yaxis.label] +
                      ax.get_xticklabels() + ax.get_yticklabels()):
             item.set_fontsize(12)
-
     """
     replicates_full = tidy_ds(ds_cur)
 
@@ -367,6 +366,21 @@ for epitope, metadata in EPITOPES.items():
         )
     axd[chem_legend_ax].axis("off")
 
+    #grouptitle = "Moderna Trial Cohort" if group == "moderna" else "HAARVI Cohort"
+    group_title_map = {
+        "moderna" : "Moderna Trial Cohort",
+        "haarvi" : "HAARVI Cohort"
+    }
+
+    epitope_title_map = {
+        "NTD" : "N-Terminal Domain (NTD)",
+        "CTD-N" : "C-Terminal Domain (CTD-N)",
+        "FP" : "Fusion Peptide (FP)",
+        "stem helix-HR2" : "Stem Helix-HR2 (SH-H)"
+    }
+    figtitle = f"{group_title_map[group]}\n{epitope_title_map[epitope]}"
+    fig.suptitle(figtitle, fontsize=20)
+
     #axd[diff_sel_plot].set_title(f"{epitope}, {batch} replicates with wt binding above {bt}\n{num_pairs} paired samples")
 
 
@@ -384,6 +398,6 @@ for epitope, metadata in EPITOPES.items():
     plt.subplots_adjust(top=top, left=0.15)
     """
 
-    plt.savefig(f"{epitope}-{args.out}")
+    plt.savefig(f"{epitope}-{args.out}", dpi=600)
     print(epitope)
     #break
