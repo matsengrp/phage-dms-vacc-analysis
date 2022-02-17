@@ -38,7 +38,6 @@ if group == "moderna":
 
     cmap=plt.get_cmap("Set3")
     infect_vacc_colors = [cmap.colors[4], cmap.colors[2]]
-    #figsize=[10, 16]
     figsize=[10, 16]
     t1 = "36 days post-vaccination"
     t2 = "119 days post-vaccination"
@@ -163,18 +162,9 @@ for epitope, metadata in EPITOPES.items():
         mosaic[i, 0:5] = int(i*2)
         mosaic[i, 5:11] = int(i*2+1)
     mosaic[num_pairs, :] = num_pairs*2
-    #mosaic[num_pairs+1, :] = num_pairs*2+3
-    #mosaic[num_pairs+2, :] = num_pairs*2+1
-    #mosaic[num_pairs+3, :] = num_pairs*2+1
-    #mosaic[num_pairs+4, :] = num_pairs*2+1
 
-    #diff_sel_plot = num_pairs*2+1
     chem_legend_ax = num_pairs*2
-    #group_legend_ax = num_pairs*2+3
 
-    #mosaic[num_pairs+2, 9] = -1
-    #mosaic[num_pairs+3, 9] = group_legend_ax
-    #mosaic[num_pairs+4, 9] = group_legend_ax
     mosaic = mosaic.astype(int)
 
     # set up the mosaic
@@ -279,67 +269,7 @@ for epitope, metadata in EPITOPES.items():
         for item in ([ax.xaxis.label, ax.yaxis.label] +
                      ax.get_xticklabels() + ax.get_yticklabels()):
             item.set_fontsize(12)
-    """
-    replicates_full = tidy_ds(ds_cur)
 
-    replicates_full["visit_number"] = replicates_full["visit_number"].astype("category")
-    replicates_full["visit_number"] = replicates_full["visit_number"].cat.reorder_categories(
-            [t1, t2]
-    )
-    left_overlap=int(metadata["right border"]-PEPTIDE_FLANK)#-0.5
-    right_overlap=int(metadata["left border"]+PEPTIDE_FLANK)#+0.5
-    replicates_full = replicates_full[
-        replicates_full["Loc"].isin(range(left_overlap, right_overlap+1))
-    ]
-
-    groups = ["Loc", "sample_id", "participant_ID", "visit_number"]
-    melted_sum_sample_loc = replicates_full.groupby(groups).sum().reset_index()
-    
-
-    a = sns.boxplot(
-            x="Loc", 
-            y = f"smooth_{flank}_enr_diff_sel", 
-            hue="visit_number", 
-            data=melted_sum_sample_loc,
-            linewidth=3,
-            palette = infect_vacc_colors,
-            ax = axd[diff_sel_plot],
-            showfliers=False
-    )
-
-    legend_elements = [
-        patches.Patch(
-             facecolor=infect_vacc_colors[0],
-             edgecolor="black",
-             label= f"{l1} \nn={n_g1}"
-        ),
-        patches.Patch(
-             facecolor=infect_vacc_colors[1],
-             edgecolor="black",
-             label= f"{l2} \nn={n_g2}"
-        )
-    ]
-
-    axd[diff_sel_plot].set_frame_on(False)
-    axd[diff_sel_plot].legend([], [], frameon=False)
-    for tick in axd[diff_sel_plot].get_xticklabels():
-        tick.set_rotation(90)
-
-    for sp in [diff_sel_plot]:
-        ax = axd[sp]
-        for item in ([ax.title, ax.xaxis.label, ax.yaxis.label] +
-                     ax.get_xticklabels() + ax.get_yticklabels()):
-            item.set_fontsize(14)
-    
-    axd[group_legend_ax].legend(
-            handles=legend_elements,
-            loc="center",
-            frameon=False,
-            ncol=2,
-            prop={'size': 12}
-    )
-    axd[group_legend_ax].axis("off")
-    """
     chemistry = {
         "red" : "Acidic",
         "blue" : "Basic",
@@ -366,7 +296,6 @@ for epitope, metadata in EPITOPES.items():
         )
     axd[chem_legend_ax].axis("off")
 
-    #grouptitle = "Moderna Trial Cohort" if group == "moderna" else "HAARVI Cohort"
     group_title_map = {
         "moderna" : "Moderna Trial Cohort",
         "haarvi" : "HAARVI Cohort"
@@ -381,23 +310,4 @@ for epitope, metadata in EPITOPES.items():
     figtitle = f"{group_title_map[group]}\n{epitope_title_map[epitope]}"
     fig.suptitle(figtitle, fontsize=20)
 
-    #axd[diff_sel_plot].set_title(f"{epitope}, {batch} replicates with wt binding above {bt}\n{num_pairs} paired samples")
-
-
-    #axd[diff_sel_plot].set_ylabel(f"Summed\n differential selection")
-    #axd[diff_sel_plot].axhline(0, color="black", linestyle="--")
-    """
-    fontsize=16
-    kw = dict(ha="center", va="center", fontsize=fontsize, color="black", rotation=0)
-    title  = "Moderna Trial" if group=="moderna" else "HAARVI"
-    top = 0.98 if group=="moderna" else 0.94
-    top = 0.94
-    fig.text(0.5, top, f"{title}\n {epitope} scaled differential selection", **kw)
-    top = 0.94 if group=="moderna" else 0.85
-    top = 0.85
-    plt.subplots_adjust(top=top, left=0.15)
-    """
-
     plt.savefig(f"{epitope}-{args.out}", dpi=600)
-    print(epitope)
-    #break

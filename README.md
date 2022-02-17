@@ -8,10 +8,19 @@ Authors: Meghan E. Garrett\*, Jared G. Galloway\*, Caitlin Wolf, Jennifer K. Log
 
 ### What is this?
 
-This repository is here to serve as a static archive for all analysis done in the manuscript. 
-Primarily, it aims to provide transparency and reproducibility within the context of our study. 
+This repository is here to serve as a static archive for all analysis done in 
+*Comprehensive characterization of the 
+antibody responses to SARS- CoV- 2 Spike 
+protein finds additional vaccine- induced 
+epitopes beyond those for mild infection* -- an elife published manuscript which
+may be found at 
+[http://dx.doi.org/10.7554/eLife.73490](http://dx.doi.org/10.7554/eLife.73490).
+
+Primarily, this repository aims to provide transparency and reproducibility within the context of our study. 
 The files provide a complete set of materials to replicate the analysis (from fastq to figures) 
 found in our manuscript with a single execution of a Nextflow pipeline.
+For exploring the data interactively, please see our
+[DMS-View data repository](https://github.com/matsengrp/vacc-dms-view-host-repo). 
 
 Ultimately, running the pipeline will result in an 
 [xarray DataSet](http://xarray.pydata.org/en/stable/), 
@@ -20,8 +29,8 @@ for more on this dataset organization),
 as well as Figures as seen in the manuscript.
 The pipeline runs the analysis and plotting code for two sets of of phage-display library batch replicates. The figure sets for each respective batch are separated here:
 
-1. Figure set from ["SPIKE1 Replicates"]() 
-2. Figure set from ["SPIKE2 Replicates"]() <- presented in the manuscript
+1. Figure set from ["SPIKE1 Replicates"](Manuscript-Figures/SPIKE1/) 
+2. Figure set from ["SPIKE2 Replicates"](Manuscript-Figured/SPIKE2/) <- presented in the manuscript
 
 If interested in obtaining raw data to perform the analysis yourself,
 please feel free to contact Jared Galloway:
