@@ -68,7 +68,7 @@ The materials for analysis are primarily broken down into three categories:
         
 2. `analysis-scripts/` The python scripts for computing normalizations on the data, as well as plotting code to produce our final figures. 
 
-3. `nextflow-pipeline-config/` The Nextflow pipeline script as well as all necessary configuration scripts to run the wokflow either (a) locally on a computer with docker installed, or (b) a [SLURM](https://slurm.schedmd.com/documentation.html) managed cluster with singularity available. 
+3. `nextflow-pipeline-config/` The Nextflow pipeline script as well as all necessary configuration scripts to run the workflow either (a) locally on a computer with docker installed, or (b) a [SLURM](https://slurm.schedmd.com/documentation.html) managed cluster with singularity available. 
 
 
 ### Running the Pipeline
