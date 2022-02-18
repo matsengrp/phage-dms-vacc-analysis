@@ -1,5 +1,5 @@
 # Comprehensive characterization of the antibody responses to SARS-CoV-2 Spike protein finds additional vaccine- induced epitopes beyond those for mild infection
-**Published in** [elife](http://dx.doi.org/10.7554/eLife.73490).
+[Published in eLife](http://dx.doi.org/10.7554/eLife.73490).
 Authors: Meghan E. Garrett\*, Jared G. Galloway\*, Caitlin Wolf, Jennifer K. Logue, Nicholas Franko, Helen Chu, Frederick A. Matsen IV^, Julie Overbaugh^
 
 \* these authors contributed equally to this work.
