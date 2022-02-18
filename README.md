@@ -8,15 +8,7 @@ Authors: Meghan E. Garrett\*, Jared G. Galloway\*, Caitlin Wolf, Jennifer K. Log
 
 ### What is this?
 
-This repository is here to serve as a static archive for all analysis done in 
-*Comprehensive characterization of the 
-antibody responses to SARS- CoV- 2 Spike 
-protein finds additional vaccine- induced 
-epitopes beyond those for mild infection* -- an elife published manuscript which
-may be found at 
-[http://dx.doi.org/10.7554/eLife.73490](http://dx.doi.org/10.7554/eLife.73490).
-
-Primarily, this repository aims to provide transparency and reproducibility within the context of our study. 
+This repository is here to provide a static archive for all analyses done in our study.
 The files provide a complete set of materials to replicate the analysis (from fastq to figures) 
 found in our manuscript with a single execution of a Nextflow pipeline.
 For exploring the data interactively, please see our
